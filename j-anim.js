@@ -1,5 +1,5 @@
 // ------------------------------------------------
-// Declarations
+// Variable Declarations
 // ------------------------------------------------
 
 // Variables
@@ -10,7 +10,7 @@ var nLoopCount 		= 0;
 var nMaxLoop 		= 1;
 
 
-// IDs / Classes
+// IDs / Classes / 
 
 
 var idBanner 		= cssTweenJS.getElement("id", "banner");
