@@ -15,7 +15,7 @@
 
 <style type="text/css">
 body,td,th { color: #FFFFFF; }
-#banner { width:900px; height:300px; border:1px solid #666; position:absolute; top:0px; left:0px; background:#ffffff; overflow:hidden;}
+#banner { width:900px; height:300px; border:1px solid #666; position:absolute; top:0px; left:0px; background:#000; overflow:hidden;}
 .square { width:120px;height:20px; position:absolute; left:100px; top:0px;	}
 #square1 { background-color:#3AD990; top:0px; }
 #square2 { background-color:#132653; top:40px; }
@@ -26,11 +26,11 @@ body,td,th { color: #FFFFFF; }
 
 #squareContainer1 { display:none;}
 
-#pixelSquare1, #pixelSquare2 {position:absolute; width:50px; height:50px; top:50px; left:50px; background:#ACACAC; }
+#pixelSquare1, #pixelSquare2 {position:absolute; width:50px; height:50px; top:50px; left:50px; background:#ACACAC; opacity:0}
 
 #pixelSquare2 {top:150px; background:#ACACAC;}
 
-.blob { position:absolute; width:30px; height:30px; background:#E9E9E9; display:block; }
+.blob { position:absolute; width:3px; height:3px; background:#676767; display:block; }
 
 </style>
 </head>
@@ -38,14 +38,7 @@ body,td,th { color: #FFFFFF; }
 <body>
 
     <div id="banner">
-       	<div id="squareContainer1">
-          <div id="square1" class="square"></div>
-          <div id="square2" class="square"></div>
-          <div id="square3" class="square"></div>
-          <div id="square4" class="square"></div>
-          <div id="square5" class="square"></div>
-          <div id="square6" class="square"></div>
-        </div>
+       
 	</div>
     
     
@@ -56,9 +49,9 @@ body,td,th { color: #FFFFFF; }
 </body>
 
 	<!-- JAVASCRIPT -->
-    <script type="text/javascript" src="j-cssTweenJS.js"></script>
-    <script type="text/javascript" src="j-GeneratorJS.js"></script>
-    <script type="text/javascript" src="j-getRandom.js"></script>	
-	<script type="text/javascript" src="j-anim.js"></script>
+    <script type="text/javascript" src="src/AtomTween.js"></script>
+    <script type="text/javascript" src="src/ParticleGen.js"></script>
+    <script type="text/javascript" src="src/GetRandom.js"></script>	
+	<script type="text/javascript" src="src/anim.js"></script>
 
 </html>

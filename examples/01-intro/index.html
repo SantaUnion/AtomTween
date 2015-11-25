@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name=”ad.size” content=”width=900,height=600”>
+<script type="text/javascript">
+	var clickTag = "http://www.google.com"; 
+</script>
+
+
+<title>cssTweenJS KillAllTweens 2015</title>
+
+	 <!-- CSS -->
+
+<style type="text/css">
+body,td,th { color: #666666; }
+#banner { width:900px; height:300px; border:1px solid #666; position:absolute; top:0px; left:0px; background:#000; overflow:hidden;}
+.square { width:120px;height:20px; position:absolute; left:100px; top:0px;	}
+#square1 { background-color:#3AD990; top:0px; }
+#square2 { background-color:#132653; top:40px; }
+#square3 { background-color:#3D28CD; top:80px; }
+#square4 { background-color:#DAD435; top:120px; }
+#square5 { background-color:#EB2326; top:160px; }
+#square6 { background-color:#14D3B0; top:200px; }
+
+#squareContainer1 { display:none;}
+
+#pixelSquare1, #pixelSquare2 {position:absolute; width:50px; height:50px; top:50px; left:50px; background:#ACACAC; opacity:0}
+
+#pixelSquare2 {top:150px; background:#ACACAC;}
+
+.blob { position:absolute; width:3px; height:3px; background:#676767; display:block; }
+
+#banner 		{ width:900px; height:300px; position:absolute; top:0px; left:0px; background:#fff; }
+#logo 			{position:absolute; left:229px; top:103px; width:442px; height:63px; background:url(images/atomtween-logo.png) no-repeat 0px 0px; }
+#strapline 		{position:absolute; left:228px; top:177px; width:444px; height:17px; background:url(images/strapline.png) no-repeat 0px 0px; }
+
+#properties 	{position:absolute; left:28px; top:231px; width:73px; height:16px; background:url(images/properties.png) no-repeat 0px 0px; opacity:0 }
+#perspective 	{position:absolute; left:28px; top:255px; width:87px; height:16px; background:url(images/perspective.png) no-repeat 0px 0px; opacity:0 }
+#opacity	 	{position:absolute; left:134px; top:255px; width:53px; height:16px; background:url(images/opacity.png) no-repeat 0px 0px; opacity:0}
+#top		 	{position:absolute; left:206px; top:255px; width:87px; height:16px; background:url(images/top.png) no-repeat 0px 0px; opacity:0}
+#left		 	{position:absolute; left:250px; top:255px; width:24px; height:16px; background:url(images/left.png) no-repeat 0px 0px; opacity:0}
+#width		 	{position:absolute; left:293px; top:255px; width:41px; height:16px; background:url(images/width.png) no-repeat 0px 0px; opacity:1}
+#height		 	{position:absolute; left:353px; top:255px; width:45px; height:16px; background:url(images/height.png) no-repeat 0px 0px; opacity:1}
+#x			 	{position:absolute; left:419px; top:258px; width:8px; height:16px; background:url(images/x.png) no-repeat 0px 0px; opacity:0}
+#y			 	{position:absolute; left:447px; top:258px; width:8px; height:16px; background:url(images/y.png) no-repeat 0px 0px; opacity:0}
+#rotate		 	{position:absolute; left:475px; top:255px; width:43px; height:16px; background:url(images/rotate.png) no-repeat 0px 0px; opacity:0}
+#rotateX	 	{position:absolute; left:537px; top:255px; width:53px; height:16px; background:url(images/rotateX.png) no-repeat 0px 0px; opacity:0}
+#rotateY	 	{position:absolute; left:611px; top:255px; width:53px; height:16px; background:url(images/rotateY.png) no-repeat 0px 0px; opacity:0}
+#rotateZ	 	{position:absolute; left:684px; top:255px; width:53px; height:16px; background:url(images/rotateZ.png) no-repeat 0px 0px; opacity:0}
+#scale		 	{position:absolute; left:757px; top:255px; width:36px; height:16px; background:url(images/scale.png) no-repeat 0px 0px; opacity:0}
+#shadow		 	{position:absolute; left:812px; top:255px; width:57px; height:16px; background:url(images/shadow.png) no-repeat 0px 0px; opacity:1; }
+
+</style>
+</head>
+
+<body>
+
+    <div id="banner">
+    
+    	<div id="background"></div>
+        <div id="logo"></div>
+        <div id="strapline"></div>
+        
+        <div id="particles"></div>
+        <div id="properties"></div>
+        <div id="perspective"></div>
+        <div id="opacity"></div>
+        <div id="top"></div>
+        <div id="left"></div>
+        <div id="width"></div>
+        <div id="height"></div>
+        <div id="x"></div>
+        <div id="y"></div>
+        <div id="rotate"></div>
+        <div id="rotateX"></div>
+        <div id="rotateY"></div>
+        <div id="rotateZ"></div>
+        <div id="scale"></div>
+        <div id="shadow">HELLO</div>
+    
+    </div>
+     
+    
+    <div id="pixelSquare1"></div>
+    <div id="pixelSquare2"></div>
+    
+    
+   
+   
+
+</body>
+
+	<!-- JAVASCRIPT -->
+    <script type="text/javascript" src="../../src/AtomTween.js"></script>
+    <script type="text/javascript" src="../../src/ParticleGen.js"></script>
+    <script type="text/javascript" src="../../src/GetRandom.js"></script>	
+	<script type="text/javascript" src="anim.js"></script>
+
+</html>
