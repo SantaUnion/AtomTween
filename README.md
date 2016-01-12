@@ -15,6 +15,11 @@
 
 AtomTween's API is samiliar to the popular GSAP TweenLite.
 
+
+
+
+AtomTween's API is based on the GSAP TweenLite.
+
 ```javascript
 // Get element
 var myElementID	= AtomTween.getElement("id", "myDiv");
@@ -27,10 +32,20 @@ AtomTween.to (myElementID, 1, {x:500, ease:"ease-in"});
 
 **Delay**
 Number of second delay animation is performed
+```javascript
+// 20 second delay
+var myElementID	= AtomTween.getElement("id", "myDiv");
+AtomTween.to (myElementID, 20, {y:200, ease:"ease-out"});
+```
 
 
 **Opacity**
-
+Specifies the transparency of an element between 0-100. 
+```javascript
+// Fadeout element
+var myElementID	= AtomTween.getElement("id", "myDiv");
+AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
+```
 
 **left**
 
@@ -60,6 +75,7 @@ Number of second delay animation is performed
 //   perspective:1000 = normal perspective
 //   perspective:500 = greater perspective
 //   perspective:1500 = subtle perspective
+var idBanner	= AtomTween.getElement("id", "banner");
 AtomTween.to (idBanner, 0, {perspective:500}); 
 ```
 
@@ -74,9 +90,6 @@ AtomTween.to (idBanner, 0, {perspective:500});
 
 ### Methods
 
-
-
-AtomTween is based on the GSAP TweenLite API model.
 
 
 Copyright (c) 2015, Santa Union. All rights reserved.
