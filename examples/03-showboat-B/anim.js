@@ -138,7 +138,16 @@ function init() {
 		var count = 0; // this will contain the total elements.
 		for (var i = 0; i < w.childNodes.length; i++) {
 			var node = w.childNodes[i];
-			AtomTween.to (node, GetRandom.number(1,5,false), {delay:del+=0.001, y:GetRandom.number(0,300,false), x:GetRandom.number(0,900,false), rotate:GetRandom.number(0,360,false), scale:GetRandom.number(1,5,false), opacity:1, ease:"ease-in-out"});
+			AtomTween.to (node, GetRandom.number(1,5,false), {	delay:del+=0.001, 
+																y:GetRandom.number(-300,300,false), 
+																x:GetRandom.number(0,900,false), 
+																rotate:GetRandom.number(0,360,false), 
+																scale:GetRandom.number(1,2,false), 
+																rotateX:GetRandom.number(1,180,false),
+																rotateY:GetRandom.number(1,180,false), 
+																rotateZ:GetRandom.number(1,180,false), 
+																opacity:1, 
+																ease:"ease-in-out"});
 		}
 		
 		AtomTween.delayedCall(particleIntro, del+=0.2);
@@ -150,7 +159,13 @@ function init() {
 		var count = 0; // this will contain the total elements.
 		for (var i = 0; i < w.childNodes.length; i++) {
 			var node = w.childNodes[i];
-			AtomTween.to (node, 1, {delay:del+=0.001, y:150, x:450, rotate:GetRandom.number(0,360,false), scale:1, opacity:0, ease:"ease-in"});
+			AtomTween.to (node, 1, {	delay:del+=0.001, 
+									y:150, x:450, 
+									rotate:0, 
+									rotateX:0, 
+									rotateY:0, 
+									rotateZ:0, 
+									scale:1, opacity:0, ease:"ease-in"});
 		}
 		
 		AtomTween.delayedCall(particleOutro, del+=0.2);
@@ -163,7 +178,15 @@ function init() {
 		var count = 0; // this will contain the total elements.
 		for (var i = 0; i < w.childNodes.length; i++) {
 			var node = w.childNodes[i];
-			AtomTween.to (node, GetRandom.number(1,5,false), {delay:del+=0.001, y:GetRandom.number(0,300,false), x:GetRandom.number(0,900,false), rotate:GetRandom.number(0,360,false), scale:GetRandom.number(1,5,false), opacity:1, ease:"ease-in-out"});
+			AtomTween.to (node, GetRandom.number(1,5,false), {delay:del+=0.001, 
+															y:GetRandom.number(0,300,false), 
+															x:GetRandom.number(0,900,false), 
+															rotate:GetRandom.number(0,360,false),
+															rotateX:GetRandom.number(1,180,false),
+															rotateY:GetRandom.number(1,180,false), 
+															rotateZ:GetRandom.number(1,180,false), 
+															scale:GetRandom.number(1,5,false), 
+															opacity:1, ease:"ease-in-out"});
 		}
 		AtomTween.delayedCall(particleIntro, del+=0.2);
 		
