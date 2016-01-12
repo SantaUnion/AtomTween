@@ -13,7 +13,7 @@
 
 ## API
 
-**AtomTween's** API will be familiar if you've used [GSAP TweenLite](https://greensock.com/tweenlite).  The API is modelled on very simiular lines with just a few minor differences.
+**AtomTween's** API is modelled on very similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with just a few minor differences.
 
 ```javascript
 // Get div element
