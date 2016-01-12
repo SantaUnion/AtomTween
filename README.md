@@ -13,7 +13,7 @@ How lightweight is AtomTween?
 
 What can it do?
 
-### Expamples
+### Examples
 
 
 
@@ -22,10 +22,6 @@ What can it do?
 ### API
 
 If you're familiar with GSAP TweenLite, you'll be able to dive straight in and start using AtomTween right away as it follow a similar API.
-
-For example, say you want to move an element 500px to the left over 1 second with an ease in:
-
-
 
 ```javascript
 // Get element
