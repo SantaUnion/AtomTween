@@ -7,6 +7,7 @@
 * Simple API
 * Fast & smooth CSS animation
 * Methods include onStart / onComplete
+* Simple techniques 
 
 
 
@@ -30,7 +31,7 @@ AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2,
 
 **delay:**
 ```javascript
-// delay: numerical value based on seconds
+// delay: numerical value in seconds
 // Delay the animation on Element by 8 seconds
 AtomTween.to (myElementID, 1, {delay:8, y:200, ease:"ease-out"});
 ```
@@ -95,7 +96,7 @@ AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 **perspective:** 
 
 ```javascript
-// perspective: Numberical value from 0-2000
+// perspective: numerical value from 0-2000
 // 150 yeilds extreme perspective, 2000 yeilds subtle persepective 
 
 // Apply perspective to container
