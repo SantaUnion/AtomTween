@@ -28,8 +28,9 @@ For example, say you want to move an element 500px to the left over 1 second wit
 
 
 ```javascript
-// Move div element 500px to the left over 1 second with 'easein'.
+// Get element
 var myElementID	= AtomTween.getElement("id", "myDiv");
+// Move element 500px to the left over 1 second with 'easein'.
 AtomTween.to (myElementID, 1, {x:500, ease:"ease-in"});
 ```
 
