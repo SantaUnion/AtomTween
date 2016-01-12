@@ -30,8 +30,6 @@ AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2,
 **Delay:**
 Number of seconds delay prior to animation on element
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv");
 // Delay the animation on Element by 8 seconds
 AtomTween.to (myElementID, 8, {y:200, ease:"ease-out"});
 ```
@@ -40,64 +38,48 @@ AtomTween.to (myElementID, 8, {y:200, ease:"ease-out"});
 **Opacity:**
 Numberical value between 0-100. 
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv");
 // Fade Out Element over 5 seconds
 AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```
 
 **left:** Numerical value based on pixels
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate Element Left to 50px of its relative position to parent element
 AtomTween.to (myElementID, 1, {left:50, ease:"ease-out"});
 ```
 
 **top:** Numerical value based on pixels
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate Element Top to 80px of its relative position to parent element
 AtomTween.to (myElementID, 1, {top:80, ease:"ease-out"});
 ```
 
 **width:** Numerical value based on pixels
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate the Width of the Element to 200px
 AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 ```
 
 **height:** Numerical value based on pixels
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate the Height of the Element to 200px
 AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 ```
 
 **scale:** Numerical value ie 1 = 100%, 2 = 200%
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate the Scale of the Element to 200%
 AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
 ```
 
 **x:** Numerical value based on pixels. Recommended over 'left' for smoother transitions
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate X position to 300px of its relative position to parent element
 AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
 ```
 
 **y:** Numerical value based on pixels. Recommended over 'top' for smoother transitions
 ```javascript
-// Get Element
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Animate Y position to 600px of its relative position to parent element
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
@@ -135,6 +117,7 @@ AtomTween.to (myElementID, 1, {rotateY:90, ease:"ease-out"});
 **onStart** call function on start of animation
 ```javascript
 var myElementID = AtomTween.getElement("id", "myDiv");
+
 AtomTween.to (myElementID, 1, {delay:0, x:50, onStart:doSomething, ease:"ease-in-out"});
 
 function doSomething () {
@@ -146,6 +129,7 @@ function doSomething () {
 **onComplete** call function once element animation has finished
 ```javascript
 var myElementID = AtomTween.getElement("id", "myDiv");
+
 AtomTween.to (myElementID, 1, {delay:0, x:50, onComplete:doSomething, ease:"ease-in-out"});
 
 function doSomething () {
