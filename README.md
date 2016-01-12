@@ -1,11 +1,11 @@
 # AtomTween
 
-#### Lightweight CSS Animation Engine designed for Modern Browsers
+#### A lightweight and versatile CSS Animation Engine designed for Modern Browsers
 
-* Lightweight 3kb footprint
+* Lightweight 3KB footprint
 * Simple API
-* Fast and smooth CSS animation
-* Ideal for HTML5 banners
+* Fast & smooth CSS animation
+* Ideal for HTML5 banners which have file-size restrictions ie 50kb
 
 
 ## Examples
@@ -13,7 +13,9 @@
 
 ## API
 
-**AtomTween's** API is modelled on very similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with just a few minor differences.
+**AtomTween's** API is modelled on similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with just a few minor differences. So if your familiar with GSAP TweenLite your ready to dive right in and start using AtomTween.
+
+AtomTween can handle several properties of an element, 
 
 ```javascript
 // Get div element
@@ -23,7 +25,7 @@ AtomTween.to (myElementID, 1, {x:500, ease:"ease-in"});
 ```
 
 
-## Properties
+### Properties
 
 **Delay:**
 Number of seconds delay prior to animation performed on element
@@ -87,7 +89,7 @@ AtomTween.to (idBanner, 0, {perspective:500});
 
 
 
-### Sequencing Animation Technique
+## Sequencing Animation Technique
 
 
 
