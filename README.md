@@ -5,8 +5,8 @@
 * Super lightweight 3KB footprint
 * Simple API
 * Fast & smooth CSS animation
-* Ideal for HTML5 banners which have file-size restrictions ie 50kb
-* Handles sproperties of an element over time
+* Methods include onStart / onComplete
+* Ideal for HTML5 banners which have file-size restrictions of @50kb
 
 
 ## Examples
@@ -37,7 +37,7 @@ AtomTween.to (myElementID, 8, {y:200, ease:"ease-out"});
 
 
 **Opacity:**
-Specifies the transparency of an element between 0-100. 
+Numberical value between 0-100. 
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv");
@@ -45,7 +45,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```
 
-**left:**
+**left:** Numerical value based on pixels
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -53,7 +53,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {left:50, ease:"ease-out"});
 ```
 
-**top:**
+**top:** Numerical value based on pixels
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -61,7 +61,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {top:80, ease:"ease-out"});
 ```
 
-**width:**
+**width:** Numerical value based on pixels
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -69,7 +69,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 ```
 
-**height:**
+**height:** Numerical value based on pixels
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -77,7 +77,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 ```
 
-**scale:**
+**scale:** Numerical value ie 1 = 100%, 2 = 200%
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -85,7 +85,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
 ```
 
-**x:** Recommended over 'left' for smoother transitions
+**x:** Numerical value based on pixels. Recommended over 'left' for smoother transitions
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -93,7 +93,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
 ```
 
-**y:** Recommended over 'top' for smoother transitions
+**y:** Numerical value based on pixels. Recommended over 'top' for smoother transitions
 ```javascript
 // Get Element
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
@@ -101,7 +101,7 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
 
-**perspective:** Number
+**perspective:** Numerical value.
 
 ```javascript
 var javascript	= AtomTween.getElement("id", "banner");
@@ -111,19 +111,21 @@ AtomTween.to (javascript, 0, {perspective:500});
 ```
 
 
-**rotateX**
+**rotateX** Numberical value base on degrees
 ```javascript
-var idBannerID	= AtomTween.getElement("id", "banner");
 var idObjectID	= AtomTween.getElement("id", "banner");
-// Set parent container for perspective. Values: 150 yeilds extreme perspective, 2000 yeilds subtle persepective 
-AtomTween.to (idBanner, 0, {perspective:500}); 
+// Rotate X by 90º degrees over 1 second 
+AtomTween.to (myElementID, 1, {rotateX:90, ease:"ease-out"});
 ```
 
+**rotateY** Numberical value base on degrees
+```javascript
+var idObjectID	= AtomTween.getElement("id", "banner");
+// Rotate Y by -45º degrees over 1 second 
+AtomTween.to (myElementID, 1, {rotateY:90, ease:"ease-out"});
+```
 
-
-**rotateY**
-
-**rotateZ**
+**rotateZ** Numberical value base on degrees
 
 
 

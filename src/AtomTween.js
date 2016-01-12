@@ -222,6 +222,15 @@ var	nTweenID;
 		  }
 		  
 		  // --------------------------------------------------
+		  // onStart : function call
+		  // -------------------------------------------------- 
+		  
+		  if (arg.onStart != "") {
+		  	var onStartID 	= setTimeout ( arg.onStart, 20);
+		  }
+		  
+		  
+		   // --------------------------------------------------
 		  // OnComplete : function call
 		  // -------------------------------------------------- 
 		  
@@ -229,6 +238,7 @@ var	nTweenID;
 		  	var nOnCompleteTime 	= ( arg.delay + seconds ) * 1000;
 		  	var onCompleteID 	= setTimeout ( arg.onComplete, nOnCompleteTime);
 		  }
+		  
 		  
 		
 	  	  /* -------- of AtomTween.to -------- */

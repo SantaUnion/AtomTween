@@ -86,7 +86,10 @@ function init() {
 	// Kill All Tweens
 	// setTimeout(function(){ AtomTween.killAll() }, 3000);
 	
-	// AtomTween.to (idSquare4, 		5, {delay:del+=0, width:400, opacity:1, onComplete:alertMe, ease:"ease-in-out"});
+	var test = AtomTween.getElement("id", "test");
+	// AtomTween.to (test, 		1, {delay:del+=0, width:400, opacity:1, onComplete:alertMe, ease:"ease-in-out"});
+	
+	AtomTween.to (test, 		1, {delay:del+=0, width:400, opacity:1, onStart:alertStart, onComplete:alertEnd, ease:"ease-in-out"});
 	
 	// ----------------------------------------
 	// ParticleGen
@@ -94,7 +97,7 @@ function init() {
 	
 	// ParticleGen ({containerID:"banner", newClass:"blob", inlineCSS:"width:30px; height:30px; background:green; ", maxObjects:2550, position:[400,200], spacing:[1,3,90]});
 	
-	ParticleGen ({containerID:"banner", newClass:"blob", inlineCSS:"width:30px; height:30px; background:green; ", maxObjects:1000, position:[400,0], spacing:[4,4,20]});
+	// ParticleGen ({containerID:"banner", newClass:"blob", inlineCSS:"width:30px; height:30px; background:green; ", maxObjects:1000, position:[400,0], spacing:[4,4,20]});
 		
 	
 	
@@ -108,7 +111,7 @@ function init() {
 	// alert (w.childNodes.length-1);
 	for (var i = 0; i < w.childNodes.length; i++) {
 		var node = w.childNodes[i];
-		AtomTween.to (node, GetRandom.number(1,5,false), {delay:del+=0.001, y:GetRandom.number(0,300,false), x:GetRandom.number(0,900,false), rotate:GetRandom.number(0,360,false), scale:GetRandom.number(1,5,false), opacity:1, ease:"ease-in-out"});
+		// AtomTween.to (node, GetRandom.number(1,5,false), {delay:del+=0.001, y:GetRandom.number(0,300,false), x:GetRandom.number(0,900,false), rotate:GetRandom.number(0,360,false), scale:GetRandom.number(1,5,false), opacity:1, ease:"ease-in-out"});
 	}
 	
 	
@@ -118,10 +121,10 @@ function init() {
 	// ----------------------------------------
 	
 	
-	function alertMe() {
-		alert ("This function was call by an 'onComplete from the AtomTween.to function");	
-		AtomTween.to (idSquare5, 		5, {delay:del+=0, width:400, opacity:1, ease:"ease-in-out"});
-	}
+	function alertStart() 	{ console.log ("alertStart <<<<<<<<<<<");}
+	function alertEnd() 		{ console.log (">>>>>>>> alertEnd");	}
+	
+	
 	
 	function myTest () { 
 		// alert ("onComplete Works!!") 
