@@ -1,27 +1,19 @@
 # AtomTween
 
-#### Lightweight pure CSS animation engine designed for modern browsers
+#### Lightweight CSS animation engine designed for modern browsers
 
-### FAQ
+* Lightweight 3kb footprint
+* Simple API
+* Fast and smooth CSS animation
+* Ideal for HTML5 banners
 
-What is AtomTween?
-- Lightweight pure CSS animation engine designed specifically for modern browsers
-
-
-How lightweight is AtomTween?
-- The minfied version of AtomTween only 3kb and is an ideal animation engine for standard HTML5 banners.
-
-What can it do?
 
 ### Examples
 
 
-
--
-
 ### API
 
-If you're familiar with GSAP TweenLite, you'll be able to dive straight in and start using AtomTween right away as it follow a similar API.
+AtomTween's API is samiliar to the popular GSAP TweenLite.
 
 ```javascript
 // Get element
