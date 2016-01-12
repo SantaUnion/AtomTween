@@ -18,7 +18,7 @@
 **AtomTween's** API is modelled on similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with just a few minor differences. 
 
 ```javascript
-// Get Elements
+// Get Element from the DOM
 var myElementID	= AtomTween.getElement("id", "myDiv"); 
 // Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
 AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
@@ -29,6 +29,7 @@ AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2,
 
 **Delay**
 ```javascript
+// delay: Numberical value based on seconds
 // Delay the animation on Element by 8 seconds
 AtomTween.to (myElementID, 1, {delay:8, y:200, ease:"ease-out"});
 ```
@@ -90,7 +91,7 @@ AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
 
-**perspective:* 
+**perspective** 
 
 ```javascript
 // perspective: Numberical value from 0-2000;
