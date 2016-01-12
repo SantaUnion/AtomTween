@@ -27,11 +27,8 @@ For example, say you want to move an element 500px to the left over 1 second wit
 
 
 
-AtomTween: 
-
-
 ```javascript
-//Draw a square on screen.
+// Move div element 500px to the left over 1 second with 'easein'.
 var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {x:500, ease:"ease-in"});
 ```
@@ -74,7 +71,7 @@ Number of second delay animation is performed
 //   perspective:1000 = normal perspective
 //   perspective:500 = greater perspective
 //   perspective:1500 = subtle perspective
-AtomTween.to (idBanner, 0,		{perspective:500}); 
+AtomTween.to (idBanner, 0, {perspective:500}); 
 ```
 
 
@@ -87,20 +84,6 @@ AtomTween.to (idBanner, 0,		{perspective:500});
 
 
 ### Methods
-
-
-
-sTween = "AtomTween.to ( " + object.id + ", " + seconds + ", {";
-		if (arg.delay != null) 		{ sTween += "delay:"+arg.delay + ", "; }
-		if (arg.opacity != null) 	{ sTween += "opacity:"+arg.opacity + ", "; }
-		if (arg.x != null) 			{ sTween += "x:"+arg.x + ", "; }
-		if (arg.y != null) 			{ sTween += "y:"+arg.y + ", "; }
-		if (arg.scale != null) 		{ sTween += "scale:"+arg.scale + ", "; }
-		if (arg.perspective != null) { sTween += "perspective:"+arg.perspective + ", "; }
-		if (arg.rotate != null) 		{ sTween += "rotate:"+arg.rotate + ", "; }
-		if (arg.rotateY != null) 	{ sTween += "rotateY:"+arg.rotateY + ", "; }
-		if (arg.rotateZ != null) 	{ sTween += "rotateZ:"+arg.rotateZ + ", "; }
-		if (arg.ease != null) 		{ sTween += "ease:'"+arg.ease + "' "; }
 
 
 
