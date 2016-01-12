@@ -132,10 +132,10 @@ AtomTween.to (myElementID, 1, {rotateY:90, ease:"ease-out"});
 
 ### Methods
 
-**onStart** function call on start of animation
+**onStart** call function on start of animation
 ```javascript
 var myElementID = AtomTween.getElement("id", "myDiv");
-AtomTween.to (myElementID, 1, {delay:del+=0, width:400, opacity:1, onStart:doSomething, ease:"ease-in-out"});
+AtomTween.to (myElementID, 1, {delay:0, x:50, onStart:doSomething, ease:"ease-in-out"});
 
 function doSomething () {
     // do something
@@ -143,10 +143,10 @@ function doSomething () {
 ```
 
 
-**onComplete** function call when animation is complete
+**onComplete** call function once element animation has finished
 ```javascript
 var myElementID = AtomTween.getElement("id", "myDiv");
-AtomTween.to (myElementID, 1, {delay:del+=0, x:400, opacity:1, onComplete:doSomething, ease:"ease-in-out"});
+AtomTween.to (myElementID, 1, {delay:0, x:50, onComplete:doSomething, ease:"ease-in-out"});
 
 function doSomething () {
     // do something
