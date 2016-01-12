@@ -1,12 +1,12 @@
 # AtomTween
 
-#### A lightweight and versatile CSS Animation Engine designed for Modern Browsers
+#### A lightweight and versatile CSS Animation Engine for Modern Browsers
 
-* Lightweight 3KB footprint
+* Super lightweight 3KB footprint
 * Simple API
 * Fast & smooth CSS animation
 * Ideal for HTML5 banners which have file-size restrictions ie 50kb
-* Can handle several properties of an element over time
+* Handles sproperties of an element over time
 
 
 ## Examples
@@ -101,21 +101,25 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
 
-**perspective:**
+**perspective:** Number
 
 ```javascript
-// Set this to a div containing elements to 
-// Smaller the number the greater the perspective
-// Example:
-//   perspective:1000 = normal perspective
-//   perspective:500 = greater perspective
-//   perspective:1500 = subtle perspective
-var idBanner	= AtomTween.getElement("id", "banner");
-AtomTween.to (idBanner, 0, {perspective:500}); 
+var javascript	= AtomTween.getElement("id", "banner");
+// Set parent container for perspective 
+// 150 yeilds extreme perspective - 2000 yeilds subtle persepective 
+AtomTween.to (javascript, 0, {perspective:500}); 
 ```
 
 
 **rotateX**
+```javascript
+var idBannerID	= AtomTween.getElement("id", "banner");
+var idObjectID	= AtomTween.getElement("id", "banner");
+// Set parent container for perspective. Values: 150 yeilds extreme perspective, 2000 yeilds subtle persepective 
+AtomTween.to (idBanner, 0, {perspective:500}); 
+```
+
+
 
 **rotateY**
 
