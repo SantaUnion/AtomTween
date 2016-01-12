@@ -19,7 +19,8 @@
 
 ```javascript
 // Get Element from the DOM
-var myElementID	= AtomTween.getElement("id", "myDiv"); 
+var myElementID	= AtomTween.getElement("id", "myDiv");
+
 // Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
 AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
 ```
@@ -37,35 +38,35 @@ AtomTween.to (myElementID, 1, {delay:8, y:200, ease:"ease-out"});
 
 **opacity:**
 ```javascript
-// opacity: numerical value between 0-100 
+// opacity: numerical from 0 to 100 
 // Fade Out Element over 5 seconds
 AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```
 
 **left:** 
 ```javascript
-// left: numerical value based on pixels
+// left: numerical value in pixels
 // Animate Element Left to 50px of its relative position to parent element
 AtomTween.to (myElementID, 1, {left:50, ease:"ease-out"});
 ```
 
 **top:** 
 ```javascript
-// top: numerical value based on pixels
+// top: numerical value in pixels
 // Animate the Element top to 80px of its relative position to parent element
 AtomTween.to (myElementID, 1, {top:80, ease:"ease-out"});
 ```
 
 **width:** 
 ```javascript
-// width: numerical value based on pixels
+// width: numerical value in pixels
 // Animate the Width of the Element to 200px
 AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 ```
 
 **height:**
 ```javascript
-// height: numerical value based on pixels
+// height: numerical value in pixels
 // Animate the Height of the Element to 200px
 AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 ```
@@ -79,14 +80,14 @@ AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
 
 **x:** 
 ```javascript
-// x: numerical value based on pixels. Use 'x' in preference to 'left' for smoother transitions
+// x: numerical value in pixels. Use 'x' in preference to 'left' for smoother transitions
 // Animate x position to 300px of its relative position to parent element
 AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
 ```
 
 **y:**
 ```javascript
-// y: numerical value based on pixels. Use 'y' in preference to 'top' for smoother transitions
+// y: numerical value in pixels. Use 'y' in preference to 'top' for smoother transitions
 // Animate y position to 600px of its relative position to parent element
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
@@ -94,33 +95,31 @@ AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 **perspective:** 
 
 ```javascript
-// perspective: Numberical value from 0-2000;
+// perspective: Numberical value from 0-2000
+// 150 yeilds extreme perspective, 2000 yeilds subtle persepective 
 
-// Get the parent container for perspective 
-var containerID	= AtomTween.getElement("id", "container");
-
-// 150 yeilds extreme perspective / 2000 yeilds subtle persepective 
-AtomTween.to (javascript, 0, {perspective:500}); 
+// Apply perspective to container
+AtomTween.to (containerID, 0, {perspective:500}); 
 ```
 
 
 **rotateX:** 
 ```javascript
-// rotateX: numerical value base on degrees
+// rotateX: angle in degrees
 // rotateX by 90º degrees over 1 second 
 AtomTween.to (myElementID, 1, {rotateX:90, ease:"ease-out"});
 ```
 
 **rotateY:** 
 ```javascript
-// rotateY: numerical value base on degrees
+// rotateY: angle in degrees
 // rotateY by -45º degrees over 1 second 
 AtomTween.to (myElementID, 1, {rotateY:-45, ease:"ease-out"});
 ```
 
 **rotateZ:**
 ```javascript
-// rotateZ: numerical value base on degrees
+// rotateZ: angle in degrees
 // rotateZ by 180º degrees over 1 second 
 AtomTween.to (myElementID, 1, {rotateZ:180, ease:"ease-out"});
 ```
