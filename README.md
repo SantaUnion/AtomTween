@@ -1,6 +1,6 @@
 # AtomTween
 
-#### Lightweight CSS animation engine designed for modern browsers
+#### Lightweight CSS Animation Engine designed for Modern Browsers
 
 * Lightweight 3kb footprint
 * Simple API
@@ -8,30 +8,25 @@
 * Ideal for HTML5 banners
 
 
-### Examples
+## Examples
 
 
-### API
+## API
 
-AtomTween's API is samiliar to the popular GSAP TweenLite.
-
-
-
-
-AtomTween's API is based on the GSAP TweenLite.
+AtomTween's API will be familiar if you've used [GSAP TweenLite](https://greensock.com/tweenlite).  The API is modelled on very simiular lines with just a few minor differences.
 
 ```javascript
-// Get element
+// Get div element
 var myElementID	= AtomTween.getElement("id", "myDiv");
 // Move element 500px to the left over 1 second with 'easein'.
 AtomTween.to (myElementID, 1, {x:500, ease:"ease-in"});
 ```
 
 
-### Properties
+## Properties
 
-**Delay**
-Number of second delay animation is performed
+**Delay:**
+Number of seconds delay prior to animation performed on element
 ```javascript
 // 20 second delay
 var myElementID	= AtomTween.getElement("id", "myDiv");
@@ -39,7 +34,7 @@ AtomTween.to (myElementID, 20, {y:200, ease:"ease-out"});
 ```
 
 
-**Opacity**
+**Opacity:**
 Specifies the transparency of an element between 0-100. 
 ```javascript
 // Fadeout element
@@ -47,26 +42,26 @@ var myElementID	= AtomTween.getElement("id", "myDiv");
 AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```
 
-**left**
+**left:**
 
 
-**top**
+**top:**
 
-**width**
-
-
-**height**
-
-**scale**
+**width:**
 
 
-**x**
+**height:**
+
+**scale:**
 
 
-**y**
+**x:**
 
 
-**perspective**
+**y:**
+
+
+**perspective:**
 
 ```javascript
 // Set this to a div containing elements to 
@@ -89,6 +84,10 @@ AtomTween.to (idBanner, 0, {perspective:500});
 
 
 ### Methods
+
+
+
+### Sequencing Animation Technique
 
 
 
