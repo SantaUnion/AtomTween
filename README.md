@@ -13,7 +13,7 @@
 ## Examples
 
 
-## API
+## API Example
 
 **AtomTween's** API is modelled on similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with just a few minor differences. 
 
@@ -27,97 +27,109 @@ AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2,
 
 ### Properties
 
-**Delay:**
-Number of seconds delay prior to animation on element
+**Delay**
 ```javascript
 // Delay the animation on Element by 8 seconds
-AtomTween.to (myElementID, 8, {y:200, ease:"ease-out"});
+AtomTween.to (myElementID, 1, {delay:8, y:200, ease:"ease-out"});
 ```
 
 
-**Opacity:**
-Numberical value between 0-100. 
+**Opacity**
 ```javascript
+// opacity: Numberical value between 0-100 
 // Fade Out Element over 5 seconds
 AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```
 
-**left:** Numerical value based on pixels
+**left** 
 ```javascript
+// left: Numerical value based on pixels
 // Animate Element Left to 50px of its relative position to parent element
 AtomTween.to (myElementID, 1, {left:50, ease:"ease-out"});
 ```
 
-**top:** Numerical value based on pixels
+**top** 
 ```javascript
+// top: Numerical value based on pixels
 // Animate Element Top to 80px of its relative position to parent element
 AtomTween.to (myElementID, 1, {top:80, ease:"ease-out"});
 ```
 
-**width:** Numerical value based on pixels
+**width** 
 ```javascript
+// width: Numerical value based on pixels
 // Animate the Width of the Element to 200px
 AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 ```
 
-**height:** Numerical value based on pixels
+**height**
 ```javascript
+// height: Numerical value based on pixels
 // Animate the Height of the Element to 200px
 AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 ```
 
-**scale:** Numerical value ie 1 = 100%, 2 = 200%
+**scale** 
 ```javascript
+// scale: Numerical value ie. 1 = 100%, 2 = 200%
 // Animate the Scale of the Element to 200%
 AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
 ```
 
-**x:** Numerical value based on pixels. Recommended over 'left' for smoother transitions
+**x** 
 ```javascript
-// Animate X position to 300px of its relative position to parent element
+// x: Numerical value based on pixels. Use 'x' in preference to 'left' for smoother transitions
+// Animate x position to 300px of its relative position to parent element
 AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
 ```
 
-**y:** Numerical value based on pixels. Recommended over 'top' for smoother transitions
+**y**
 ```javascript
-// Animate Y position to 600px of its relative position to parent element
+// y: Numerical value based on pixels. Use 'y' in preference to 'top' for smoother transitions
+// Animate y position to 600px of its relative position to parent element
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
 
-**perspective:** Numerical value.
+**perspective:* 
 
 ```javascript
-var javascript	= AtomTween.getElement("id", "banner");
-// Set parent container for perspective 
+// perspective: Numberical value from 0-2000;
+
+// Get the parent container for perspective 
+var containerID	= AtomTween.getElement("id", "container");
+
 // 150 yeilds extreme perspective - 2000 yeilds subtle persepective 
 AtomTween.to (javascript, 0, {perspective:500}); 
 ```
 
 
-**rotateX** Numberical value base on degrees
+**rotateX** 
 ```javascript
-var idObjectID	= AtomTween.getElement("id", "banner");
-// Rotate X by 90º degrees over 1 second 
+// rotateX: Numberical value base on degrees
+// rotateX by 90º degrees over 1 second 
 AtomTween.to (myElementID, 1, {rotateX:90, ease:"ease-out"});
 ```
 
-**rotateY** Numberical value base on degrees
+**rotateY** 
 ```javascript
-var idObjectID	= AtomTween.getElement("id", "banner");
-// Rotate Y by -45º degrees over 1 second 
-AtomTween.to (myElementID, 1, {rotateY:90, ease:"ease-out"});
+// rotateY: Numberical value base on degrees
+// rotateY by -45º degrees over 1 second 
+AtomTween.to (myElementID, 1, {rotateY:-45, ease:"ease-out"});
 ```
 
 **rotateZ** Numberical value base on degrees
-
+```javascript
+// rotateZ: Numberical value base on degrees
+// rotateZ by 180º degrees over 1 second 
+AtomTween.to (myElementID, 1, {rotateZ:180, ease:"ease-out"});
+```
 
 
 ### Methods
 
-**onStart** call function on start of animation
+**onStart** 
 ```javascript
-var myElementID = AtomTween.getElement("id", "myDiv");
-
+// onStart: call function on start of animation
 AtomTween.to (myElementID, 1, {delay:0, x:50, onStart:doSomething, ease:"ease-in-out"});
 
 function doSomething () {
@@ -126,10 +138,9 @@ function doSomething () {
 ```
 
 
-**onComplete** call function once element animation has finished
+**onComplete** 
 ```javascript
-var myElementID = AtomTween.getElement("id", "myDiv");
-
+// onComplete: call function once element animation has finished
 AtomTween.to (myElementID, 1, {delay:0, x:50, onComplete:doSomething, ease:"ease-in-out"});
 
 function doSomething () {
