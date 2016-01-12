@@ -2,11 +2,12 @@
 
 #### A lightweight and versatile CSS Animation Engine for Modern Browsers
 
+* Ideal animation tool for HTML5 banners which have file-size restrictions of @50kb
 * Super lightweight 3KB footprint
 * Simple API
 * Fast & smooth CSS animation
 * Methods include onStart / onComplete
-* Ideal for HTML5 banners which have file-size restrictions of @50kb
+
 
 
 ## Examples
@@ -131,9 +132,29 @@ AtomTween.to (myElementID, 1, {rotateY:90, ease:"ease-out"});
 
 ### Methods
 
+**onStart** function call on start of animation
+```javascript
+var myElementID = AtomTween.getElement("id", "myDiv");
+AtomTween.to (myElementID, 1, {delay:del+=0, width:400, opacity:1, onStart:doSomething, ease:"ease-in-out"});
+
+function doSomething () {
+    // do something
+}
+```
 
 
-## Sequencing Animation Technique
+**onComplete** function call when animation is complete
+```javascript
+var myElementID = AtomTween.getElement("id", "myDiv");
+AtomTween.to (myElementID, 1, {delay:del+=0, x:400, opacity:1, onComplete:doSomething, ease:"ease-in-out"});
+
+function doSomething () {
+    // do something
+}
+```
+
+
+### Sequencing Animation Technique
 
 
 
