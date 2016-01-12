@@ -48,8 +48,34 @@ function init() {
 	
 	trace (">> f:anim");
 	
-	var del = 0;
-	nLoopCount += 1;
+	var del = 0; // use delay to sequencing animation
+	/*
+	var box1ID = AtomTween.getElement("id", "box1");
+	var box2ID = AtomTween.getElement("id", "box2");
+	var box3ID = AtomTween.getElement("id", "box3");
+	
+	
+	function init() {
+		del = 0;
+		AtomTween.to (box1ID, 0, {delay:0, x:100, y:100, scale:1, opacity:1, ease:"ease-in-out"});
+		AtomTween.to (box2ID, 0, {delay:0, x:200, y:100, scale:1, opacity:1, ease:"ease-in-out"});
+		AtomTween.to (box3ID, 0, {delay:0, x:300, y:100, scale:1, opacity:1, ease:"ease-in-out"});
+		
+		animate();
+		
+	}
+	
+	function animate () {
+			
+		AtomTween.to (box1ID, 1, {delay:del+=1, x:200, opacity:0, ease:"ease-in-out"});
+		AtomTween.to (box2ID, 1, {delay:del+=1, y:600, scale:2, ease:"ease-in-out"});
+		AtomTween.to (box3ID, 1, {delay:del+=2, x:400, rotate:360, ease:"ease-in-out"});
+		AtomTween.to (box1ID, 1, {delay:del+=1, scale:3, onComplete:init, ease:"ease-in-out"});
+		
+	}
+	
+	init();
+	*/
 	
 	
 	// ----------------------------------------
