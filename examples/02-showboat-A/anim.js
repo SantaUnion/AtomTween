@@ -65,7 +65,7 @@ function init() {
 	
 	
 	// Perspective on Banner
-	AtomTween.to (idBanner, 0,		{perspective:100}); 
+	AtomTween.to (idBanner, 0,		{perspective:500}); 
 	
 	// set up
 	AtomTween.to (idLogo, 		0.25, {delay:del+=0, rotateX:90, opacity:0});
