@@ -107,21 +107,21 @@ AtomTween.to (containerID, 0, {perspective:500});
 **rotateX:**
 ```javascript
 // rotateX: angle in degrees
-// rotateX by 90º degrees over 1 second
+// rotateX by 90° degrees over 1 second
 AtomTween.to (myElementID, 1, {rotateX:90, ease:"ease-out"});
 ```
 
 **rotateY:**
 ```javascript
 // rotateY: angle in degrees
-// rotateY by -45º degrees over 1 second
+// rotateY by -45° degrees over 1 second
 AtomTween.to (myElementID, 1, {rotateY:-45, ease:"ease-out"});
 ```
 
 **rotateZ:**
 ```javascript
 // rotateZ: angle in degrees
-// rotateZ by 180º degrees over 1 second
+// rotateZ by 180° degrees over 1 second
 AtomTween.to (myElementID, 1, {rotateZ:180, ease:"ease-out"});
 ```
 
