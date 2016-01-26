@@ -139,6 +139,8 @@ var	nTweenID;
 			  CssUtil.applyCssWithBrowserPrefix(object,'height', arg.height + 'px'); 
 		  }
 		  
+		 
+		  
 		   // --------------------------------------------------
 		  // Transform: TranslateX 
 		  // --------------------------------------------------
@@ -212,6 +214,21 @@ var	nTweenID;
 			  trace (">> shadow");
 			  sTransformSetting += 'box-shadow(' + arg.shadow + ') ';
 		  }
+		  
+		  // --------------------------------------------------
+		  // Transform: Origin
+		  // --------------------------------------------------
+	  
+		  if (arg.tranformOrigin != null) {
+			  console.log ('>>>> transform-origin(' + arg.tranformOrigin + ' ');
+			  // sTransformSetting += 'transform-origin:' + arg.tranformOrigin + ' ';
+			  CssUtil.applyCssWithBrowserPrefix(object,'transform-origin', arg.tranformOrigin);
+		  }
+		  
+		  
+		  
+		 
+		  
 		  
 		  // --------------------------------------------------
 		  // Set the final Transform

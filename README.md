@@ -79,6 +79,23 @@ AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
 ```
 
+**rotate:**
+```javascript
+// rotate: angle in degrees
+// rotate clockwise by 90° degrees over 1 second
+AtomTween.to (myElementID, 1, {rotate:90, ease:"ease-out"});
+```
+
+**transformOrigin:**
+```javascript
+// transformOrigin: modify the origin for transformations of an element
+// eg "100% 0%", "20px 100px", 'top right'
+// transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
+AtomTween.to (myElementID, 1, {tranformOrigin:"100% 50%", rotate:90, ease:"ease-out"});
+```
+
+
+
 **x:**
 ```javascript
 // x: numerical value in pixels. Use 'x' in preference to 'left' for smoother transitions
@@ -107,21 +124,21 @@ AtomTween.to (containerID, 0, {perspective:500});
 **rotateX:**
 ```javascript
 // rotateX: angle in degrees
-// rotateX by 90° degrees over 1 second
+// rotateX clockwise by 90° degrees over 1 second
 AtomTween.to (myElementID, 1, {rotateX:90, ease:"ease-out"});
 ```
 
 **rotateY:**
 ```javascript
 // rotateY: angle in degrees
-// rotateY by -45° degrees over 1 second
+// rotateY anti-clockwise by 45° degrees over 1 second
 AtomTween.to (myElementID, 1, {rotateY:-45, ease:"ease-out"});
 ```
 
 **rotateZ:**
 ```javascript
 // rotateZ: angle in degrees
-// rotateZ by 180° degrees over 1 second
+// rotateZ clockwise 180° degrees over 1 second
 AtomTween.to (myElementID, 1, {rotateZ:180, ease:"ease-out"});
 ```
 
@@ -149,31 +166,31 @@ function doSomething () {
 ```
 
 
-### Sequencing Animation Technique
+### Animation Sequencing Technique
 
 ```javascript
 var del = 0; // use delay to sequencing animation
-var box1ID = AtomTween.getElement("id", "box1");
-var box2ID = AtomTween.getElement("id", "box2");
-var box3ID = AtomTween.getElement("id", "box3");
+var redboxID = AtomTween.getElement("id", "box1");
+var blueboxID = AtomTween.getElement("id", "box2");
+var greenboxID = AtomTween.getElement("id", "box3");
 
 function init() {
     del = 0;
-    AtomTween.to (box1ID, 0, {delay:0, x:100, y:100, scale:1, opacity:1, ease:"ease-in-out"});
-    AtomTween.to (box2ID, 0, {delay:0, x:200, y:100, scale:1, opacity:1, ease:"ease-in-out"});
-    AtomTween.to (box3ID, 0, {delay:0, x:300, y:100, scale:1, opacity:1, ease:"ease-in-out"});
+    AtomTween.to (redboxID, 0, {delay:0, x:100, y:100, scale:1, opacity:1, ease:"ease-in-out"});
+    AtomTween.to (blueboxID, 0, {delay:0, x:200, y:100, scale:1, opacity:1, ease:"ease-in-out"});
+    AtomTween.to (greenboxID, 0, {delay:0, x:300, y:100, scale:1, opacity:1, ease:"ease-in-out"});
     animate();
 }
 
 function animate () {
-    AtomTween.to (box1ID, 1, {delay:del+=1, x:200, opacity:0, ease:"ease-in-out"});
-    AtomTween.to (box2ID, 1, {delay:del+=1, y:600, scale:2, ease:"ease-in-out"});
-    AtomTween.to (box3ID, 1, {delay:del+=2, x:400, rotate:360, ease:"ease-in-out"});
+    AtomTween.to (redboxID, 1, {delay:del+=1, x:200, opacity:0, ease:"ease-in-out"});
+    AtomTween.to (blueboxID, 1, {delay:del+=1, y:600, scale:2, ease:"ease-in-out"});
+    AtomTween.to (greenboxID, 1, {delay:del+=2, x:400, rotate:360, ease:"ease-in-out"});
     AtomTween.to (box1ID, 1, {delay:del+=1, scale:3, onComplete:init, ease:"ease-in-out"});
 }
 
-init();
+window.onload = init;
 
 ```
 
-Copyright (c) 2015, Santa Union. All rights reserved.
+Copyright (c) 2016, Santa Union. All rights reserved.
