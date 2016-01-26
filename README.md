@@ -40,35 +40,35 @@ AtomTween.to (myElementID, 1, {delay:8, y:200, ease:"ease-out"});
 
 **opacity:**
 ```javascript
-// opacity: numerical from 0 to 100
+// opacity: numerical value from 0 to 100
 // Fade Out Element over 5 seconds
 AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```
 
 **left:**
 ```javascript
-// left: numerical value in pixels
+// left: numerical value based on pixels
 // Animate Element Left to 50px of its relative position to parent element
 AtomTween.to (myElementID, 1, {left:50, ease:"ease-out"});
 ```
 
 **top:**
 ```javascript
-// top: numerical value in pixels
+// top: numerical value based on pixels
 // Animate the Element top to 80px of its relative position to parent element
 AtomTween.to (myElementID, 1, {top:80, ease:"ease-out"});
 ```
 
 **width:**
 ```javascript
-// width: numerical value in pixels
+// width: numerical value based on pixels
 // Animate the Width of the Element to 200px
 AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 ```
 
 **height:**
 ```javascript
-// height: numerical value in pixels
+// height: numerical value based on pixels
 // Animate the Height of the Element to 200px
 AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 ```
@@ -76,7 +76,7 @@ AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
 **scale:**
 ```javascript
 // scale: numerical value ie. 1 = 100%, 2 = 200%
-// Animate the Scale of the Element to 200%
+// Animate the scale of the Element to 200%
 AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
 ```
 
@@ -90,7 +90,7 @@ AtomTween.to (myElementID, 1, {rotate:90, ease:"ease-out"});
 **transformOrigin:**
 ```javascript
 // transformOrigin: modify the origin of the transformation point of an element
-// Acceptable transform-orign paramters: "100% 0%", "20px 100px", 'top right'
+// Acceptable paramters: "100% 0%", "20px 100px", 'top right'
 // transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
 AtomTween.to (myElementID, 1, {tranformOrigin:"100% 50%", rotate:90, ease:"ease-out"});
 ```
@@ -99,15 +99,15 @@ AtomTween.to (myElementID, 1, {tranformOrigin:"100% 50%", rotate:90, ease:"ease-
 
 **x:**
 ```javascript
-// x: numerical value in pixels. Use 'x' in preference to 'left' for smoother transitions
-// Animate x position to 300px of its relative position to parent element
+// x: numerical value in pixels. Use 'x' in preference to 'left' for smoother css transitions
+// Animate x position to 300px relative to the position of its parent element
 AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
 ```
 
 **y:**
 ```javascript
-// y: numerical value in pixels. Use 'y' in preference to 'top' for smoother transitions
-// Animate y position to 600px of its relative position to parent element
+// y: numerical value in pixels. Use 'y' in preference to 'top' for smoother css transitions
+// Animate y position to 600px relative to the position of its parent element
 AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 ```
 
@@ -115,7 +115,7 @@ AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 
 ```javascript
 // perspective: numerical value from 0-2000
-// 150 yeilds extreme perspective, 2000 yeilds subtle persepective
+// 150 yields extreme perspective, 2000 yields subtle perspective
 
 // Set perspective for div container
 AtomTween.to (containerID, 0, {perspective:500});
