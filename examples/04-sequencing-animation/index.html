@@ -46,6 +46,10 @@ body,td,th 	{ color: #FFFFFF; }
 		var blueboxID = AtomTween.getElement("id", "bluebox");
 		var greenboxID = AtomTween.getElement("id", "greenbox");
 		
+		var bannerID = AtomTween.getElement("id", "banner");
+		AtomTween.to (bannerID, 0, {perspective:1000});
+		
+		
 		function init() {
 			del = 0;
 			AtomTween.to (redboxID, 0, {delay:0, x:100, y:100, scale:1, opacity:1, ease:"ease-in-out"});
@@ -59,7 +63,9 @@ body,td,th 	{ color: #FFFFFF; }
 		
 		function animate () {
 			
-			AtomTween.to (blueboxID, 1, {delay:del+=1,  rotate:90, tranformOrigin:"100% 50%", ease:"ease-in-out"});
+			AtomTween.to (redboxID, 1, {delay:del+=1,  y:20, x:380, rotate:90, rotateY:90, tranformOrigin:"0% 50%", ease:"ease-in-out"});
+			AtomTween.to (blueboxID, 1, {delay:del+=0,  y:50, x:380, rotate:90, rotateY:90, tranformOrigin:"100% 50%", ease:"ease-in-out"});
+			AtomTween.to (greenboxID, 1, {delay:del+=0,  y:200, x:380,  rotate:90, rotateY:90, tranformOrigin:"0% 0%", ease:"ease-in-out"});
 
 			
 			/*
@@ -74,7 +80,9 @@ body,td,th 	{ color: #FFFFFF; }
 		}
     
 	
-		window.onload = init;
+		// window.onload = init;
+		
+		window.addEventListener('load', init);
     
     
     </script>
