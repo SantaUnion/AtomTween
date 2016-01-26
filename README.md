@@ -87,7 +87,7 @@ AtomTween.to (myElementID, 1, {rotate:90, ease:"ease-out"});
 
 **transformOrigin:**
 ```javascript
-// transformOrigin: modify the origin for transformations of an element
+// transformOrigin: modify the origin of the transformation point of an element
 // Acceptable transform-orign paramters: "100% 0%", "20px 100px", 'top right'
 // transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
 AtomTween.to (myElementID, 1, {tranformOrigin:"100% 50%", rotate:90, ease:"ease-out"});
@@ -188,7 +188,7 @@ function animate () {
     AtomTween.to (box1ID, 1, {delay:del+=1, scale:3, onComplete:init, ease:"ease-in-out"});
 }
 
-window.onload = init;
+window.addEventListener('load', init);
 
 ```
 
