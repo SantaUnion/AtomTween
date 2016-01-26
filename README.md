@@ -2,11 +2,11 @@
 
 #### A lightweight and versatile CSS Animation Engine for Modern Browsers
 
-* Super lightweight 3KB library, ideal for HTML5 banners where file size constraints are an issue
+* Super lightweight 3KB library, ideal for file-size restricted HTML5 banners
 * Simple API
 * Fast and silky smooth CSS animation
 * A plethora of animation properties available including 3D transforms and methods including onStart and onComplete
-* Create complex animation sequence with minimal code
+* Create complex animation sequences with minimal code
 
 
 
