@@ -10,14 +10,10 @@
 
 
 
-## Examples
-
-
 ## API Example
 
 **AtomTween's** API is modelled on similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with a few minor differences.
 
-**Basic example:**
 
 ```javascript
 // Get Element from the DOM
