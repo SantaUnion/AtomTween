@@ -99,7 +99,7 @@ AtomTween.to (myElementID, 1, {y:600, ease:"ease-out"});
 // perspective: numerical value from 0-2000
 // 150 yeilds extreme perspective, 2000 yeilds subtle persepective
 
-// Apply perspective to container
+// Initiated or apply perspective to container
 AtomTween.to (containerID, 0, {perspective:500});
 ```
 
