@@ -89,7 +89,7 @@ AtomTween.to (myElementID, 1, {rotate:90, ease:"ease-out"});
 **transformOrigin:**
 ```javascript
 // transformOrigin: modify the origin for transformations of an element
-// eg "100% 0%", "20px 100px", 'top right'
+// Acceptable transform-orign paramters: "100% 0%", "20px 100px", 'top right'
 // transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
 AtomTween.to (myElementID, 1, {tranformOrigin:"100% 50%", rotate:90, ease:"ease-out"});
 ```
