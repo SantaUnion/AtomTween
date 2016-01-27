@@ -29,8 +29,8 @@ AtomTween.to (myElementID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2,
 **delay:**
 ```javascript
 // delay: numerical value in seconds
-// Delay the animation on Element by 8 seconds
-AtomTween.to (myElementID, 1, {delay:8, y:200, ease:"ease-out"});
+// Delay the animation on Element by 5 seconds
+		AtomTween.to (myElementID, 1, {delay:5, x:800, ease:"ease-out"});
 ```
 
 

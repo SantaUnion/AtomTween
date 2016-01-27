@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<campaign>
+
+	<agency>Wellcom</agency>
+    <client>AtomTween</client>
+    <campaign>A lightweight and versatile CSS Animation Engine for Modern Browsers</campaign>
+	<developer>Lee Redmond</developer>
+    <role>HTML5 Animation</role>
+	<version>1.0</version>
+	<clicktag>http://www.google.com</clicktag>
+    <prefix></prefix>
+    
+    <creatives>
+		<creative>example</creative>
+        <creative>01-intro</creative>
+        <creative>02-showboat-A</creative>
+		<creative>03-showboat-B</creative>
+		<creative>04-sequencing-animation</creative>
+    </creatives>
+
+
+
+
+
+</campaign>
+
+
