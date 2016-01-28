@@ -8,7 +8,6 @@
 
 <title>AtonTween: transformOrigin</title>
 
-<!-- CSS -->
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="../css/examples.css">
@@ -31,19 +30,25 @@
         	<div id="box1outline"></div>
             <div id="box2outline"></div>
             <div id="box3outline"></div>
-        
-    		<div id="box1"></div>
-            <div id="box2"></div>
-            <div id="box3"></div>
+            <div id="box4outline"></div>
+            
+    		<div class="box" id="box1">box1</div>
+            <div class="box" id="box2">box2</div>
+            <div class="box" id="box3">box3</div>
+            <div class="box" id="box4">box4</div>
+            
         </div>
         
         <div id="info">
         	<div id="atomTween"></div>
             <div id="title">transformOrigin:</div>
             <div id="code">
-            		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
 					
-					<span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">3</span>, {rotate:<span class="num">180</span>, ease:<span class="str">"ease-out"</span>});            
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1, <span class="num">3</span>, {tranformOrigin:<span class="str">"50% 50%"</span>, rotate:<span class="num">90</span>, ease:<span class="str">"linear"</span>});<br/> 
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box2, <span class="num">3</span>, {tranformOrigin:<span class="str">"0% 0%"</span>, rotate:<span class="num">90</span>, ease:<span class="str">"linear"</span>});<br/> 
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box3, <span class="num">3</span>, {tranformOrigin:<span class="str">"100% 100%"</span>, rotate:<span class="num">90</span>, ease:<span class="str">"linear"</span>});<br/> 
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box4, <span class="num">3</span>, {tranformOrigin:<span class="str">"0% 100%"</span>, rotate:<span class="num">90</span>, ease:<span class="str">"linear"</span>});<br/> 
+                               
             </div>
         </div>
         
@@ -62,14 +67,15 @@
 		var box1 = AtomTween.getElement("id", "box1");
 		var box2 = AtomTween.getElement("id", "box2");
 		var box3 = AtomTween.getElement("id", "box3");
+		var box4 = AtomTween.getElement("id", "box4");
 	
 		// transformOrigin: modify the origin of the transformation point of an element
-	// Acceptable paramters: "100% 0%", "20px 100px", 'top right'
-	// transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
-	AtomTween.to (box1, 1, {tranformOrigin:"50% 50%", rotate:90, ease:"ease-out"});
-	AtomTween.to (box2, 1, {tranformOrigin:"0% 0%", rotate:90, ease:"ease-out"});
-	AtomTween.to (box3, 1, {tranformOrigin:"100% 100%", rotate:90, ease:"ease-out"});
-
+		// Acceptable paramters: "100% 0%", "20px 100px", 'top right'
+		// transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
+		AtomTween.to (box1, 3, {tranformOrigin:"50% 50%", rotate:90, ease:"linear"});
+		AtomTween.to (box2, 3, {tranformOrigin:"0% 0%", rotate:90, ease:"linear"});
+		AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
+		AtomTween.to (box4, 3, {tranformOrigin:"0% 100%", rotate:90, ease:"linear"});
 		
 	}
 	

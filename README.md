@@ -44,7 +44,7 @@ AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 **left:**
 ```javascript
 // left: numerical value based on pixels
-// Animate Element Left to 50px of its relative position to parent element
+// Animate Element Left to 500px of its relative position to parent element
 AtomTween.to (myElementID, 1, {left:500, ease:"ease-out"});
 ```
 
@@ -65,7 +65,7 @@ AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 **height:**
 ```javascript
 // height: numerical value based on pixels
-// Animate the Height of the Element to 200px
+// Animate the Height of the Element to 1500px
 AtomTween.to (myElementID, 1, {height:150, ease:"ease-out"});
 ```
 
@@ -88,16 +88,16 @@ AtomTween.to (myElementID, 3, {rotate:180, ease:"ease-out"});
 // transformOrigin: modify the origin of the transformation point of an element
 // Acceptable paramters: "100% 0%", "20px 100px", 'top right'
 // transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
-AtomTween.to (myElementID, 1, {tranformOrigin:"100% 50%", rotate:90, ease:"ease-out"});
+AtomTween.to (box1, 3, {tranformOrigin:"50% 50%", rotate:90, ease:"linear"});
+AtomTween.to (box2, 3, {tranformOrigin:"0% 0%", rotate:90, ease:"linear"});
+AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
 ```
-
-
 
 **x:**
 ```javascript
 // x: numerical value in pixels. Use 'x' in preference to 'left' for smoother css transitions
-// Animate x position to 300px relative to the position of its parent element
-AtomTween.to (myElementID, 1, {x:300, ease:"ease-out"});
+// Animate x position to 800px relative to the position of its parent element
+AtomTween.to (myElementID, 1, {x:800, ease:"ease-out"});
 ```
 
 **y:**

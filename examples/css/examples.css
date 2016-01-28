@@ -8,15 +8,17 @@ body,td,th 		{ overflow:hidden; font-family:Monaco, Helvetica, Arial, sans-serif
 
 #myDiv 			{ width:50px;height:50px; position:absolute; left:20px; top:130px;	background:#e06c75;}
 
-#box1 			{ width:50px;height:50px; position:absolute; left:200px; top:180px;	background:#e06c75;}
-#box2 			{ width:50px;height:50px; position:absolute; left:400px; top:180px;	background:#5fabea;}
-#box3 			{ width:50px;height:50px; position:absolute; left:600px; top:180px;	background:#8cb371;}
+#box1 			{ width:50px;height:50px; position:absolute; left:100px; top:180px;	background:#e06c75;}
+#box2 			{ width:50px;height:50px; position:absolute; left:300px; top:180px;	background:#5fabea;}
+#box3 			{ width:50px;height:50px; position:absolute; left:500px; top:180px;	background:#8cb371;}
+#box4 			{ width:50px;height:50px; position:absolute; left:700px; top:180px;	background:#c678dd;}
 
 
 
-#box1outline	{ width:50px;height:50px; position:absolute; left:200px; top:180px;	border:1px solid #6B6B6B;}
-#box2outline 	{ width:50px;height:50px; position:absolute; left:400px; top:180px;	border:1px solid #6B6B6B;}
-#box3outline	{ width:50px;height:50px; position:absolute; left:600px; top:180px;	border:1px solid #6B6B6B;}
+#box1outline	{ width:50px;height:50px; position:absolute; left:100px; top:180px;	border:1px solid #6B6B6B;}
+#box2outline 	{ width:50px;height:50px; position:absolute; left:300px; top:180px;	border:1px solid #6B6B6B;}
+#box3outline	{ width:50px;height:50px; position:absolute; left:500px; top:180px;	border:1px solid #6B6B6B;}
+#box4outline	{ width:50px;height:50px; position:absolute; left:700px; top:180px;	border:1px solid #6B6B6B;}
 
 #atomTween		{ padding:0 0 5px 0; width:210px; height:30px; background:url(../images/atomtween-logo-01.png) no-repeat 0px 0px; }
 
@@ -33,3 +35,6 @@ span.meth  	    { color:#5fabea;}
 span.num  		{ color:#d19a66;}
 span.str  		{ color:#8cb371;}
 span.dec  		{ color:#c678dd;}
+
+
+.box			{ color:#282c34; font-size:11px; text-align:center; vertical-align:middle;}
