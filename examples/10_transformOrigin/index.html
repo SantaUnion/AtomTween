@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name=”ad.size” content=”width=900,height=300”>
+
+
+<title>AtonTween: transformOrigin</title>
+
+<!-- CSS -->
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
+<style type="text/css">
+		#myDiv 			{ width:50px;height:50px; position:absolute; left:400px; top:175px;	background:#e06c75;}
+</style>
+
+
+</head>
+
+
+
+<body>
+
+    <div id="container">
+    	
+    
+    	<div id="anim">
+        
+        	<div id="box1outline"></div>
+            <div id="box2outline"></div>
+            <div id="box3outline"></div>
+        
+    		<div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+        </div>
+        
+        <div id="info">
+        	<div id="atomTween"></div>
+            <div id="title">transformOrigin:</div>
+            <div id="code">
+            		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
+					
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">3</span>, {rotate:<span class="num">180</span>, ease:<span class="str">"ease-out"</span>});            
+            </div>
+        </div>
+        
+    </div>
+     
+    
+</body>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="../../src/AtomTween.js"></script>
+
+<script>
+
+	function init () {
+		// Get Element from the DOM
+		var box1 = AtomTween.getElement("id", "box1");
+		var box2 = AtomTween.getElement("id", "box2");
+		var box3 = AtomTween.getElement("id", "box3");
+	
+		// transformOrigin: modify the origin of the transformation point of an element
+	// Acceptable paramters: "100% 0%", "20px 100px", 'top right'
+	// transform origin 100% left and 50% from top then rotate clockwise by 90° degrees over 1 second
+	AtomTween.to (box1, 1, {tranformOrigin:"50% 50%", rotate:90, ease:"ease-out"});
+	AtomTween.to (box2, 1, {tranformOrigin:"0% 0%", rotate:90, ease:"ease-out"});
+	AtomTween.to (box3, 1, {tranformOrigin:"100% 100%", rotate:90, ease:"ease-out"});
+
+		
+	}
+	
+	window.addEventListener("load", init);
+
+
+</script>
+
+</html>

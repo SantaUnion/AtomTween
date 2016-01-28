@@ -45,14 +45,14 @@ AtomTween.to (myElementID, 5, {opacity:0, ease:"ease-out"});
 ```javascript
 // left: numerical value based on pixels
 // Animate Element Left to 50px of its relative position to parent element
-AtomTween.to (myElementID, 1, {left:50, ease:"ease-out"});
+AtomTween.to (myElementID, 1, {left:500, ease:"ease-out"});
 ```
 
 **top:**
 ```javascript
 // top: numerical value based on pixels
 // Animate the Element top to 80px of its relative position to parent element
-AtomTween.to (myElementID, 1, {top:80, ease:"ease-out"});
+AtomTween.to (myElementID, 1, {top:250, ease:"ease-out"});
 ```
 
 **width:**
@@ -66,21 +66,21 @@ AtomTween.to (myElementID, 1, {width:200, ease:"ease-out"});
 ```javascript
 // height: numerical value based on pixels
 // Animate the Height of the Element to 200px
-AtomTween.to (myElementID, 1, {height:200, ease:"ease-out"});
+AtomTween.to (myElementID, 1, {height:150, ease:"ease-out"});
 ```
 
 **scale:**
 ```javascript
 // scale: numerical value ie. 1 = 100%, 2 = 200%
 // Animate the scale of the Element to 200%
-AtomTween.to (myElementID, 1, {scale:2, ease:"ease-out"});
+AtomTween.to (myElementID, 3, {scale:2, ease:"ease-out"});
 ```
 
 **rotate:**
 ```javascript
 // rotate: angle in degrees
-// rotate clockwise by 90° degrees over 1 second
-AtomTween.to (myElementID, 1, {rotate:90, ease:"ease-out"});
+// rotate clockwise by 180° degrees over 3 seconds
+AtomTween.to (myElementID, 3, {rotate:180, ease:"ease-out"});
 ```
 
 **transformOrigin:**

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name=”ad.size” content=”width=900,height=300”>
+
+
+<title>AtonTween: top</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
+
+</head>
+
+
+
+<body>
+
+    <div id="container">
+    	
+    
+    	<div id="anim">
+    		<div id="myDiv"></div>
+        </div>
+        
+        <div id="info">
+        	<div id="atomTween"></div>
+            <div id="title">top:</div>
+            <div id="code">
+            		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
+					
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">1</span>, {top:<span class="num">230</span>, ease:<span class="str">"ease-out"</span>});            
+            </div>
+        </div>
+        
+    </div>
+     
+    
+</body>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="../../src/AtomTween.js"></script>
+
+<script>
+
+	function init () {
+		// Get Element from the DOM
+		var myElementID = AtomTween.getElement("id", "myDiv");
+	
+		// top: numerical value based on pixels
+		// Animate the Element top to 250px of its relative position to parent element
+		AtomTween.to (myElementID, 1, {top:230, ease:"ease-out"});
+		
+		
+	}
+	
+	window.addEventListener("load", init);
+
+
+</script>
+
+</html>

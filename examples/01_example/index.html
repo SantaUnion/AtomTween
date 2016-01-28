@@ -9,25 +9,7 @@
 <title>AtonTween: Example</title>
 
 <!-- CSS -->
-
-<style type="text/css">
-	body,td,th 		{ overflow:hidden; font-family:Monaco, Helvetica, Arial, sans-serif; color:#abb2bf; -webkit-font-smoothing: antialiased;}
-	#container 		{ width:900px; height:300px;  position:absolute; top:0px; left:0px; background:#282c34; overflow:hidden;}
-	
-	#info			{ margin:20px;}
-	
-	#myDiv 			{ width:50px;height:50px; position:absolute; left:20px; top:175px;	background:#e06c75;}
-	#atomTween		{ padding:0 0 5px 0;}
-	
-	#title			{ padding:0 0 5px 0;}
-	#code			{ font-size:12px; color:#abb2bf;}
-	span.func  	    { color:#e06c75;}
-	span.meth  	    { color:#5fabea;}
-	span.num  		{ color:#d19a66;}
-	span.str  		{ color:#8cb371;}
-	span.dec  		{ color:#c678dd;}
-	
-</style>
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
 
 
 </head>
@@ -44,8 +26,8 @@
         </div>
         
         <div id="info">
-        	<div id="atomTween"><img src="../images/atomtween-logo-01.png" width="210" height="30"/></div>
-            <div id="title">Example:</div>
+        	<div id="atomTween"></div>
+            <div id="title">example:</div>
             <div id="code">
             		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
 					<span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">1</span>, {delay:<span class="num">2</span>, x:<span class="num">500</span>, opacity:<span class="num">0.5</span>, rotate:<span class="num">180</span>, scale:<span class="num">2</span>, ease:<span class="str">"ease-in"</span>});

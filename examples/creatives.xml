@@ -12,11 +12,17 @@
     <prefix></prefix>
     
     <creatives>
-		<creative>example</creative>
-        <creative>01-intro</creative>
-        <creative>02-showboat-A</creative>
-		<creative>03-showboat-B</creative>
-		<creative>04-sequencing-animation</creative>
+		<creative>01_example</creative>
+		<creative>02_delay</creative>
+		<creative>03_opacity</creative>
+		<creative>04_left</creative>
+		<creative>05_top</creative>
+		<creative>06_width</creative>
+		<creative>07_height</creative>
+		<creative>08_scale</creative>
+		<creative>09_rotate</creative>
+		<creative>10_transformOrigin</creative>
+		
     </creatives>
 
 
