@@ -21,16 +21,15 @@
     	
     
     	<div id="anim">
-    		<div id="myDiv"></div>
+            <div class="box" id="box1"><span class="centre-text">box1</span></div>
         </div>
         
         <div id="info">
         	<div id="atomTween"></div>
             <div id="title">top:</div>
             <div id="code">
-            		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
-					
-					<span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">1</span>, {top:<span class="num">230</span>, ease:<span class="str">"ease-out"</span>});            
+            		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {top:<span class="num">230</span>, ease:<span class="str">"ease-out"</span>});            
             </div>
         </div>
         
@@ -46,11 +45,11 @@
 
 	function init () {
 		// Get Element from the DOM
-		var myElementID = AtomTween.getElement("id", "myDiv");
+		var box1ID = AtomTween.getElement("id", "box1");
 	
 		// top: numerical value based on pixels
 		// Animate the Element top to 250px of its relative position to parent element
-		AtomTween.to (myElementID, 1, {top:230, ease:"ease-out"});
+		AtomTween.to (box1ID, 1, {top:230, ease:"ease-out"});
 		
 		
 	}

@@ -37,4 +37,6 @@ span.str  		{ color:#8cb371;}
 span.dec  		{ color:#c678dd;}
 
 
-.box			{ color:#282c34; font-size:11px; text-align:center; vertical-align:middle;}
+.box			{ color:#282c34; font-size:11px; text-align:center; line-height:4.5em}
+
+span.centre-text	{ }

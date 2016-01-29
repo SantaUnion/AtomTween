@@ -23,16 +23,17 @@
     	
     
     	<div id="anim">
-    		<div id="myDiv"></div>
+            <div class="box" id="box1"><span class="centre-text">box1</span></div>
+
         </div>
         
         <div id="info">
         	<div id="atomTween"></div>
             <div id="title">delay:</div>
             <div id="code">
-            		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
+            		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
 					
-                    <span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">1</span>, {delay:<span class="num">5</span>, x:<span class="num">800</span>, ease:<span class="str">"ease-out"</span>});
+                    <span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {delay:<span class="num">5</span>, x:<span class="num">800</span>, ease:<span class="str">"ease-out"</span>});
             
             </div>
         </div>
@@ -49,11 +50,11 @@
 
 	function init () {
 		// Get Element from the DOM
-		var myElementID = AtomTween.getElement("id", "myDiv");
+		var box1ID = AtomTween.getElement("id", "box1");
 	
 		// delay: numerical value in seconds
 		// Delay the animation on Element by 8 seconds
-		AtomTween.to (myElementID, 1, {delay:5, x:800, ease:"ease-out"});
+		AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 		
 	}
 	

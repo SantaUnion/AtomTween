@@ -18,17 +18,16 @@
     	
     
     	<div id="anim">
-            <div class="box" id="box1"><span class="centre-text">box1</span></div>
-            
+    		<div id="myDiv"></div>
         </div>
         
         <div id="info">
         	<div id="atomTween"></div>
-            <div id="title">left:</div>
+            <div id="title">x:</div>
             <div id="code">
-            		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
+            		<span class="dec">var</span> myElementID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"myDiv"</span>);<br/>
 					
-					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {left:<span class="num">500</span>, ease:<span class="str">"ease-out"</span>});            
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (myElementID, <span class="num">1</span>, {x:<span class="num">500</span>, ease:<span class="str">"ease-out"</span>});            
             </div>
         </div>
         
@@ -44,11 +43,11 @@
 
 	function init () {
 		// Get Element from the DOM
-		var box1ID = AtomTween.getElement("id", "box1");
+		var myElementID = AtomTween.getElement("id", "myDiv");
 	
 		// left: numerical value based on pixels
 		// Animate Element Left to 500px of its relative position to parent element
-		AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
+		AtomTween.to (myElementID, 1, {x:500, ease:"ease-out"});
 		
 	}
 	

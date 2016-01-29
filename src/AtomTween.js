@@ -1,5 +1,5 @@
 /* 	
-		AtomTween (Beta v0.19 2015)
+		AtomTween (v1.0 )
 		Code by:
 		Lee Redmond 
 		lee@santaunion.co.uk
@@ -37,9 +37,9 @@ var	nTweenID;
 	
 	AtomTween.delayedCall = function (functName, seconds) {
 	 	
-		var miliseconds	= seconds * 1000;
-		
-		setTimeout ( functName, miliseconds);
+		trace (">> delayedCall: " + functName + ", " + seconds);
+		var miliseconds		= seconds * 1000;
+		var delayCallID 		= setTimeout ( functName, miliseconds);
 	}
 	 
  	// ------------------------------------------------------------
@@ -428,7 +428,6 @@ var	nTweenID;
 	
 	}
 	*/
-	
 	
 	
     
