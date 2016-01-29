@@ -138,6 +138,30 @@ AtomTween.to (box1ID, 1, {rotateY:-45, ease:"ease-out"});
 AtomTween.to (box1ID, 1, {rotateZ:180, ease:"ease-out"});
 ```
 
+**translateX:**
+```javascript
+// translateX: numerical value in pixels
+// translateX -50px
+AtomTween.to (box1ID, 4, {translateX:-50, ease:"ease-out"});
+```
+
+**translateY:**
+```javascript
+// translateY: numerical value in pixels
+// translateY 50px
+AtomTween.to (box2ID, 4, {translateY:50, ease:"ease-out"});
+```
+
+**translateZ:**
+```javascript
+// translateZ: numerical value in pixels
+// translateZ -500px
+AtomTween.to (box3ID, 4, {translateZ:-500, ease:"ease-out"});
+```
+
+
+
+
 ### Methods
 
 **onStart:**

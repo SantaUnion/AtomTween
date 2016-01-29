@@ -197,6 +197,40 @@ var	nTweenID;
 			  sTransformSetting += 'rotateZ('+arg.rotateZ + 'deg) ';	  
 		  }
 		  
+		  
+		  
+		  // --------------------------------------------------
+		  // Transform: translateX
+		  // --------------------------------------------------
+	  
+		  if (arg.translateX != null) {
+			  trace (">> translateX");
+			  sTransformSetting += 'translateX('+arg.translateX + 'px) ';	  
+		  }
+		  
+		  // --------------------------------------------------
+		  // Transform: translateY
+		  // --------------------------------------------------
+	  
+		  if (arg.translateY != null) {
+			  trace (">> translateY");
+			  sTransformSetting += 'translateY('+arg.translateY + 'px) ';	  
+		  }
+		  
+		  
+		  // --------------------------------------------------
+		  // Transform: translateZ
+		  // --------------------------------------------------
+	  
+		  if (arg.translateZ != null) {
+			  trace (">> translateZ");
+			  sTransformSetting += 'translateZ('+arg.translateZ + 'px) ';	  
+		  }
+		  
+		  
+		
+		  
+		  
 		  // --------------------------------------------------
 		  // Transform: Scale
 		  // --------------------------------------------------
