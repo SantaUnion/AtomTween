@@ -86,7 +86,7 @@ AtomTween.to (box1ID, 3, {rotate:180, ease:"ease-out"});
 **transformOrigin:**
 ```javascript
 // transformOrigin: modify the origin of the transformation point of an element
-// Acceptable paramters: "100% 0%", "20px 100px", 'top right'
+// acceptable paramters: "100% 0%", "20px 100px", 'top right'
 AtomTween.to (box1, 3, {tranformOrigin:"50% 50%", rotate:90, ease:"linear"});
 AtomTween.to (box2, 3, {tranformOrigin:"0% 0%", rotate:90, ease:"linear"});
 AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
