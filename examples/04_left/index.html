@@ -11,6 +11,11 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="../css/examples.css">
 
+<style type="text/css">
+
+	#box1			{left:20px; top:130px;}
+
+</style>
 
 <body>
 
@@ -47,7 +52,7 @@
 		var box1ID = AtomTween.getElement("id", "box1");
 	
 		// left: numerical value based on pixels
-		// Animate Element Left to 500px of its relative position to parent element
+		// Animate Element 500px left relative to its parent element
 		AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
 		
 	}

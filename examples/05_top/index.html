@@ -11,6 +11,12 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="../css/examples.css">
 
+<style type="text/css">
+
+	#box1			{left:20px; top:130px;}
+
+</style>
+
 </head>
 
 
@@ -48,8 +54,9 @@
 		var box1ID = AtomTween.getElement("id", "box1");
 	
 		// top: numerical value based on pixels
-		// Animate the Element top to 250px of its relative position to parent element
+		// Animate Element 230px from the top relative to its parent element
 		AtomTween.to (box1ID, 1, {top:230, ease:"ease-out"});
+		
 		
 		
 	}
