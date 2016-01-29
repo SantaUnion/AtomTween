@@ -17,7 +17,7 @@
 
 ```javascript
 // Get Element from the DOM
-var box1ID	= AtomTween.getElement("id", "myDiv");
+var box1ID	= AtomTween.getElement("id", "box1");
 
 // Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
 AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
