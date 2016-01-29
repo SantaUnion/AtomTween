@@ -17,7 +17,7 @@
 
 ```javascript
 // Get element from the DOM
-var box1ID	= AtomTween.getelement("id", "box1");
+var box1ID = AtomTween.getelement("id", "box1");
 
 // Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
 AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
@@ -29,7 +29,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 **delay:**
 ```javascript
 // delay: numerical value in seconds
-// Delay the animation on element by 5 seconds
+// delay the animation on element by 5 seconds
 AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 ```
 
@@ -37,42 +37,42 @@ AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 **opacity:**
 ```javascript
 // opacity: numerical value from 0 to 100
-// Fade Out element over 5 seconds
+// animate elements opacity to 0 over 5 seconds
 AtomTween.to (box1ID, 5, {opacity:0, ease:"ease-out"});
 ```
 
 **left:**
 ```javascript
 // left: numerical value based on pixels
-// Animate element 500px left relative to its parent element
+// animate element 500px left relative to its parent element
 AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
 ```
 
 **top:**
 ```javascript
 // top: numerical value based on pixels
-// Animate element 230px from the top relative to its parent element
+// animate element 230px from the top relative to its parent element
 AtomTween.to (box1ID, 1, {top:230, ease:"ease-out"});
 ```
 
 **width:**
 ```javascript
 // width: numerical value based on pixels
-// Animate the width of the element to 700px
+// animate the width of the element to 700px
 AtomTween.to (box1ID, 3, {width:700, ease:"ease-out"});
 ```
 
 **height:**
 ```javascript
 // height: numerical value based on pixels
-// Animate the height of the element to 1500px
+// animate the height of the element to 1500px
 AtomTween.to (box1ID, 1, {height:150, ease:"ease-out"});
 ```
 
 **scale:**
 ```javascript
 // scale: numerical value ie. 1 = 100%, 2 = 200%
-// Animate the scale of the element to 200%
+// animate the scale of the element to 200%
 AtomTween.to (box1ID, 3, {scale:2, ease:"ease-out"});
 ```
 
@@ -94,16 +94,16 @@ AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
 
 **x:**
 ```javascript
-// x: numerical value in pixels. Use 'x' in preference to 'left' for smoother css transitions
-// Animate x position to 800px relative to the position of its parent element
-AtomTween.to (box1ID, 1, {x:800, ease:"ease-out"});
+// x: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
+// animate element 500px on the x axis relative its parent element
+AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
 ```
 
 **y:**
 ```javascript
-// y: numerical value in pixels. Use 'y' in preference to 'top' for smoother css transitions
-// Animate y position to 600px relative to the position of its parent element
-AtomTween.to (box1ID, 1, {y:600, ease:"ease-out"});
+// y: numerical value in pixels. Use 'y' in preference to 'left' for smoother css transitions
+// animate element 240px on the y axis relative its parent element
+AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 ```
 
 **perspective:**

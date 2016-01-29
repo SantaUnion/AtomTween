@@ -6,17 +6,16 @@
 <meta name=”ad.size” content=”width=900,height=300”>
 
 
-<title>AtonTween: left</title>
+<title>AtonTween: y</title>
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="../css/examples.css">
+
 <style type="text/css">
 
 	#box1			{left:20px; top:130px;}
 
 </style>
-
-
 
 <body>
 
@@ -29,11 +28,11 @@
         
         <div id="info">
         	<div id="atomTween"></div>
-            <div id="title">x:</div>
+            <div id="title">y:</div>
             <div id="code">
             		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
 					
-					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {x:<span class="num">500</span>, ease:<span class="str">"ease-out"</span>});            
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {y:<span class="num">240</span>, ease:<span class="str">"ease-out"</span>});            
             </div>
         </div>
         
@@ -51,12 +50,9 @@
 		// Get Element from the DOM
 		var box1ID = AtomTween.getElement("id", "box1");
 	
-		// x: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
-		// animate element 500px on the x axis relative its parent element
-		AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
-		
-		
-		
+		// y: numerical value in pixels. Use 'y' in preference to 'left' for smoother css transitions
+		// animate element 240px on the y axis relative its parent element
+		AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 		
 	}
 	
