@@ -17,7 +17,7 @@
 
 ```javascript
 // Get element from the DOM
-var box1ID = AtomTween.getelement("id", "box1");
+var box1ID = AtomTween.getElement("id", "box1");
 
 // Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
 AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
@@ -207,9 +207,9 @@ function doSomething () {
 
 ```javascript
 var del = 0; // use delay to sequencing animation
-var redboxID = AtomTween.getelement("id", "box1");
-var blueboxID = AtomTween.getelement("id", "box2");
-var greenboxID = AtomTween.getelement("id", "box3");
+var redboxID = AtomTween.getElement("id", "box1");
+var blueboxID = AtomTween.getElement("id", "box2");
+var greenboxID = AtomTween.getElement("id", "box3");
 
 function init() {
     del = 0;

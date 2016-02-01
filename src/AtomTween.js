@@ -32,7 +32,7 @@ var	nTweenID;
     
 	 
 	 // ------------------------------------------------------------
-	// AtomTween.delayedCall' function
+	// AtomTween.delayedCall function
 	// ------------------------------------------------------------
 	
 	AtomTween.delayedCall = function (functName, seconds) {
