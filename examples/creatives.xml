@@ -24,8 +24,9 @@
 		<creative>10_transformOrigin</creative>
 		<creative>11_x</creative>
 		<creative>12_y</creative>
-		<creative>13_RotateXYZ</creative>
-		
+		<creative>13_rotateXYZ</creative>
+		<creative>14_translateXYZ</creative>
+		<creative>15_skewXY</creative>
     </creatives>
 
 
