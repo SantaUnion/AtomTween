@@ -105,16 +105,22 @@ AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
 // animate element 240px on the y axis relative its parent element
 AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 ```
-**SkewX / SkewY / Skew:**
+**SkewX:**
 ```javascript
 // SkewX: string value - angle in degrees plus deg eg. '90deg'
-// SkewY: string value - angle in degrees plus deg eg. '45deg'
-// Skew: string value - x angle in degrees plus deg separated by comma and y-angle in degrees plus deg eg. '90deg, 30deg'
 AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
-AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
-AtomTween.to (box3ID, 4, {skew:"30deg, 30deg", ease:"ease-out"});
 ```
 
+**SkewY:**
+```javascript
+// SkewY: string value - angle in degrees plus deg eg. '45deg'
+AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
+```
+**Skew:**
+```javascript
+// Skew: string value - x angle in degrees plus deg
+// separated by comma and y-angle in degrees plus deg eg. '90deg, 30deg'
+AtomTween.to (box3ID, 4, {skew:"30deg, 30deg", ease:"ease-out"});
 
 **perspective:**
 
