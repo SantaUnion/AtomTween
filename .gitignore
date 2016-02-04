@@ -9,7 +9,7 @@ documentation/*
 # examples 
 examples/00-Div-Gen/
 examples/_old/
-examples/creative.xml
+examples/*.xml
 examples/index.php
 
 # source
