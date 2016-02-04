@@ -162,7 +162,7 @@ AtomTween.to (box3ID, 4, {skew:"30deg, 30deg", ease:"ease-out"});
 // Set perspective for div container
 AtomTween.to (containerID, 0, {perspective:500});
 ```
-*view* *<a href='' target='blank'>example</a>*
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
 #### **rotateX:**
