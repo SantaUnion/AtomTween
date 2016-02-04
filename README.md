@@ -37,7 +37,7 @@ AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=02_delay&mode=html5' target='blank'>example</a>*
 
 
-**opacity:**
+#### **opacity:**
 ```javascript
 // opacity: numerical value from 0 to 100
 // animate elements opacity to 0 over 5 seconds
@@ -46,7 +46,7 @@ AtomTween.to (box1ID, 5, {opacity:0, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=03_opacity&mode=html5' target='blank'>example</a>*
 
 
-**left:**
+#### **left:**
 ```javascript
 // left: numerical value based on pixels
 // animate element 500px left relative to its parent element
@@ -55,7 +55,7 @@ AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=04_left&mode=html5' target='blank'>example</a>*
 
 
-**top:**
+#### **top:**
 ```javascript
 // top: numerical value based on pixels
 // animate element 230px from the top relative to its parent element
@@ -64,7 +64,7 @@ AtomTween.to (box1ID, 1, {top:230, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=05_top&mode=html5' target='blank'>example</a>*
 
 
-**width:**
+#### **width:**
 ```javascript
 // width: numerical value based on pixels
 // animate the width of the element to 700px
@@ -73,7 +73,7 @@ AtomTween.to (box1ID, 3, {width:700, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=06_width&mode=html5' target='blank'>example</a>*
 
 
-**height:**
+#### **height:**
 ```javascript
 // height: numerical value based on pixels
 // animate the height of the element to 1500px
@@ -82,7 +82,7 @@ AtomTween.to (box1ID, 1, {height:150, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=07_height&mode=html5' target='blank'>example</a>*
 
 
-**scale:**
+#### **scale:**
 ```javascript
 // scale: numerical value ie. 1 = 100%, 2 = 200%
 // animate the scale of the element to 200%
@@ -91,7 +91,7 @@ AtomTween.to (box1ID, 3, {scale:2, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=08_scale&mode=html5' target='blank'>example</a>*
 
 
-**rotate:**
+#### **rotate:**
 ```javascript
 // rotate: angle in degrees
 // rotate elelent clockwise by 180° degrees over 3 seconds
@@ -100,7 +100,7 @@ AtomTween.to (box1ID, 3, {rotate:180, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=09_rotate&mode=html5' target='blank'>example</a>*
 
 
-**x:**
+#### **x:**
 ```javascript
 // x: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
 // animate element 500px on the x-axis relative its parent element
@@ -109,7 +109,7 @@ AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=10_x&mode=html5' target='blank'>example</a>*
 
 
-**y:**
+#### **y:**
 ```javascript
 // y: numerical value in pixels. Use 'y' in preference to 'left' for smoother css transitions
 // animate element 240px on the y-axis relative its parent element
@@ -118,7 +118,7 @@ AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=11_y&mode=html5' target='blank'>example</a>*
 
 
-**transformOrigin:**
+#### **transformOrigin:**
 ```javascript
 // transformOrigin: modify the origin of the transformation point of an element
 // acceptable paramters: "100% 0%", "20px 100px", 'top right'
@@ -128,7 +128,7 @@ AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=12_transformOrigin&mode=html5' target='blank'>example</a>*
 
-**SkewX:**
+#### **SkewX:**
 ```javascript
 // SkewX: string value - angle in degrees plus deg eg. '90deg'
 AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
@@ -136,7 +136,7 @@ AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
 
 
-**SkewY:**
+#### **SkewY:**
 ```javascript
 // SkewY: string value - angle in degrees plus deg eg. '45deg'
 AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
@@ -144,7 +144,7 @@ AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
 
 
-**Skew:**
+#### **Skew:**
 ```javascript
 // Skew: string value - x angle in degrees plus deg
 // separated by comma and y-angle in degrees plus deg eg. '90deg, 30deg'
@@ -153,7 +153,7 @@ AtomTween.to (box3ID, 4, {skew:"30deg, 30deg", ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
 
 
-**perspective:**
+#### **perspective:**
 
 ```javascript
 // perspective: numerical value from 0-2000
@@ -165,7 +165,7 @@ AtomTween.to (containerID, 0, {perspective:500});
 *view* *<a href='' target='blank'>example</a>*
 
 
-**rotateX:**
+#### **rotateX:**
 ```javascript
 // rotateX: angle in degrees
 // rotateX clockwise by 90° degrees over 1 second
@@ -174,7 +174,7 @@ AtomTween.to (box1ID, 1, {rotateX:90, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-**rotateY:**
+#### **rotateY:**
 ```javascript
 // rotateY: angle in degrees
 // rotateY anti-clockwise by 45° degrees over 1 second
@@ -183,7 +183,7 @@ AtomTween.to (box1ID, 1, {rotateY:-45, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-**rotateZ:**
+#### **rotateZ:**
 ```javascript
 // rotateZ: angle in degrees
 // rotateZ clockwise 180° degrees over 1 second
@@ -192,7 +192,7 @@ AtomTween.to (box1ID, 1, {rotateZ:180, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-**translateX:**
+#### **translateX:**
 ```javascript
 // translateX: numerical value in pixels
 // translateX -50px
@@ -201,7 +201,7 @@ AtomTween.to (box1ID, 4, {translateX:-50, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
 
-**translateY:**
+#### **translateY:**
 ```javascript
 // translateY: numerical value in pixels
 // translateY 50px
@@ -210,7 +210,7 @@ AtomTween.to (box2ID, 4, {translateY:50, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
 
-**translateZ:**
+#### **translateZ:**
 ```javascript
 // translateZ: numerical value in pixels
 // translateZ -500px
@@ -219,7 +219,7 @@ AtomTween.to (box3ID, 4, {translateZ:-500, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
 
-**Shadow: boxshadow / textshadow:**
+#### **Shadow: boxshadow / textshadow:**
 ```javascript
 // boxshadow: Add shadow to any element: h-shadow v-shadow blur spread color
 // textshadow: Adds shadow to text. Applies to text content within div elements: h-shadow v-shadow blur-radius color
@@ -232,7 +232,7 @@ AtomTween.shadow (text1ID, 	1, {delay:2, textshadow:'10px 10px 5px rgba(95, 171,
 
 ### Methods
 
-**onStart:**
+#### **onStart:**
 ```javascript
 // onStart: call function on start of animation
 AtomTween.to (box1ID, 1, {delay:0, x:50, onStart:doSomething, ease:"ease-in-out"});
@@ -243,7 +243,7 @@ function doSomething () {
 ```
 
 
-**onComplete:**
+#### **onComplete:**
 ```javascript
 // onComplete: call function once element animation has finished
 AtomTween.to (box1ID, 1, {delay:0, x:50, onComplete:doSomething, ease:"ease-in-out"});
