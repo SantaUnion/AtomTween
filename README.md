@@ -244,15 +244,6 @@ AtomTween.shadow (text1ID, 	1, {delay:2, textshadow:'10px 10px 5px rgba(95, 171,
 
 ### Methods
 
-#### **onStart:**
-```javascript
-// onStart: call function on start of animation
-AtomTween.to (box1ID, 1, {delay:0, x:50, onStart:doSomething, ease:"ease-in-out"});
-
-function doSomething () {
-    // do something
-}
-```
 
 
 #### **onComplete:**
@@ -263,6 +254,19 @@ function doSomething () {
     textID.style.display = "block";
 }
 ```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=18_onComplete&mode=html5' target='blank'>example</a>*
+
+
+#### **onStart:**
+```javascript
+// onStart: call function once element animation has finished
+AtomTween.to (box1ID, 2, {delay:3, x:500, onStart:doSomething, ease:"ease-in-out"});
+function doSomething () {
+    textID.style.display = "block";
+}
+```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=19_onStart&mode=html5' target='blank'>example</a>*
+
 
 
 ### Animation Sequencing Technique

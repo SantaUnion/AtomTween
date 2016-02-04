@@ -56,7 +56,7 @@
 		var box1ID = AtomTween.getElement("id", "box1");
 		var textID = AtomTween.getElement("id", "textID");
 	
-		// onComplete: call function once element animation has finished
+		// onStart: call function once element animation has finished
 		AtomTween.to (box1ID, 2, {delay:3, x:500, onStart:doSomething, ease:"ease-in-out"});
 		function doSomething () { textID.style.display = "block"; }
 				
