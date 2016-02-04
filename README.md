@@ -41,30 +41,22 @@ AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 AtomTween.to (box1ID, 5, {opacity:0, ease:"ease-out"});
 ```
 
-**left:**
+**left / top:**
 ```javascript
-// left: numerical value based on pixels
+// left / top: numerical value based on pixels
 // animate element 500px left relative to its parent element
 AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
-```
 
-**top:**
-```javascript
-// top: numerical value based on pixels
 // animate element 230px from the top relative to its parent element
 AtomTween.to (box1ID, 1, {top:230, ease:"ease-out"});
 ```
 
-**width:**
+**width / height:**
 ```javascript
-// width: numerical value based on pixels
+// width / height: numerical value based on pixels
 // animate the width of the element to 700px
 AtomTween.to (box1ID, 3, {width:700, ease:"ease-out"});
-```
 
-**height:**
-```javascript
-// height: numerical value based on pixels
 // animate the height of the element to 1500px
 AtomTween.to (box1ID, 1, {height:150, ease:"ease-out"});
 ```
@@ -92,19 +84,16 @@ AtomTween.to (box2, 3, {tranformOrigin:"0% 0%", rotate:90, ease:"linear"});
 AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
 ```
 
-**x:**
+**x / y:**
 ```javascript
-// x: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
+// x / y: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
 // animate element 500px on the x axis relative its parent element
 AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
-```
 
-**y:**
-```javascript
-// y: numerical value in pixels. Use 'y' in preference to 'left' for smoother css transitions
 // animate element 240px on the y axis relative its parent element
 AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 ```
+
 **SkewX:**
 ```javascript
 // SkewX: string value - angle in degrees plus deg eg. '90deg'
