@@ -6,6 +6,14 @@ deploy/*/
 development/*
 documentation/*
 
+src/anim.js
+src/AtomTween.beta.js
+src/AtomTween.beta.min.js
+src/GetRandom.js
+src/ParticleGen.js
+src/Randomizer.js
+
+
 *.zip
 .DS_Store
 about.html
