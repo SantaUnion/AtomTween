@@ -10,7 +10,7 @@ documentation/*
 examples/00-Div-Gen/
 examples/_old/
 examples/*.xml
-examples/index.php
+examples/*.php
 
 # source
 src/anim.js

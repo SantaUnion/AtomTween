@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name=”ad.size” content=”width=900,height=300”>
+
+
+<title>AtonTween: left</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
+<style type="text/css">
+
+	#box1			{left:20px; top:130px;}
+
+</style>
+
+
+
+<body>
+
+    <div id="container">
+    	
+    
+    	<div id="anim">
+            <div class="box" id="box1"><span class="centre-text">box1</span></div>
+        </div>
+        
+        <div id="info">
+        	<div id="atomTween"></div>
+            <div id="title">x:</div>
+            <div id="code">
+            		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
+					
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {x:<span class="num">500</span>, ease:<span class="str">"ease-out"</span>});            
+            </div>
+        </div>
+        
+    </div>
+     
+    
+</body>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="../../src/AtomTween.js"></script>
+
+<script>
+
+	function init () {
+		// Get Element from the DOM
+		var box1ID = AtomTween.getElement("id", "box1");
+	
+		// x: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
+		// animate element 500px on the x axis relative its parent element
+		AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
+		
+		
+		
+		
+	}
+	
+	window.addEventListener("load", init);
+
+
+</script>
+
+</html>
