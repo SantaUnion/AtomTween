@@ -258,10 +258,9 @@ function doSomething () {
 #### **onComplete:**
 ```javascript
 // onComplete: call function once element animation has finished
-AtomTween.to (box1ID, 1, {delay:0, x:50, onComplete:doSomething, ease:"ease-in-out"});
-
+AtomTween.to (box1ID, 2, {delay:0, x:500, onComplete:doSomething, ease:"ease-in-out"});
 function doSomething () {
-    // do something
+    textID.style.display = "block";
 }
 ```
 

@@ -27,14 +27,14 @@
     
     	<div id="anim">
             <div class="box" id="box1"><span class="centre-text">box1</span></div>
-            <div id="textID">AtomTween onComplete!</div>
+            <div id="textID">AtomTween onStart!</div>
         </div>
         
         <div id="info">
         	<div id="atomTween"></div>
-            <div id="title">onComplete:</div>
+            <div id="title">onStart:</div>
             <div id="code">
-            		<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">2</span>, {delay:<span class="num">0</span>, x:<span class="num">500</span>, <span class="func">onComplete</span>:doSomething, ease:<span class="str">"ease-in-out"</span>});<br/>
+            		<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">2</span>, {delay:<span class="num">3</span>, x:<span class="num">500</span>, <span class="func">onComplete</span>:doSomething, ease:<span class="str">"ease-in-out"</span>});<br/>
 					function <span class="func">doSomething()</span> { textID.style.display = <span class="str">"block"</span>; }
             
             		        
@@ -57,7 +57,7 @@
 		var textID = AtomTween.getElement("id", "textID");
 	
 		// onComplete: call function once element animation has finished
-		AtomTween.to (box1ID, 2, {delay:0, x:500, onComplete:doSomething, ease:"ease-in-out"});
+		AtomTween.to (box1ID, 2, {delay:3, x:500, onStart:doSomething, ease:"ease-in-out"});
 		function doSomething () { textID.style.display = "block"; }
 				
 		
