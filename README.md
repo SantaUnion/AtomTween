@@ -28,7 +28,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 
 ### Properties
 
-**delay:**
+## **delay:**
 ```javascript
 // delay: numerical value in seconds
 // delay the animation on element by 5 seconds
