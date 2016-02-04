@@ -23,6 +23,8 @@ var box1ID = AtomTween.getElement("id", "box1");
 AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
 ```
 
+see [Demo](http://santaunion.co.uk//repos/atomtween/examples/index.php?format=01_example&mode=html5)
+
 
 ### Properties
 
