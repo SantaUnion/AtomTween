@@ -176,6 +176,14 @@ AtomTween.to (box2ID, 4, {translateY:50, ease:"ease-out"});
 AtomTween.to (box3ID, 4, {translateZ:-500, ease:"ease-out"});
 ```
 
+**Shadow: boxshadow / textshadow:**
+```javascript
+// boxshadow: Add shadow to any element: h-shadow v-shadow blur spread color
+// textshadow: Adds shadow to text. Applies to text content within div elements: h-shadow v-shadow blur-radius color
+	AtomTween.shadow (box1ID, 	1, {delay:2, boxshadow:'10px 10px 5px 1px rgba(95, 171, 234, 1)', ease:'ease-in-out'}); 		
+	AtomTween.shadow (text1ID, 	1, {delay:2, textshadow:'10px 10px 5px rgba(95, 171, 234, 1)', ease:'ease-in-out'});
+```
+
 
 
 

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name=”ad.size” content=”width=900,height=300”>
+
+
+<title>AtonTween: shadow: boxshadow / textshadow</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
+
+<style type="text/css">
+
+	#threeD			{ position:absolute; top:0px; left:0px; width:900px; height:300px; }
+	
+	#text1 			{ position:absolute; left:300px; top:180px;	color:#e06c75; font-size:32px;}
+	
+</style>
+
+<body>
+
+    <div id="container">
+    	
+    
+    	<div id="boxContainer">
+            
+            
+    		<div class="box" id="box1"><span class="centre-text">box1</span></div>
+            <div id="text1">Text1</div>
+        </div>
+        
+        <div id="info">
+        	<div id="atomTween"></div>
+            <div id="title">shadow: boxshadow / textshadow</div>
+            <div id="code">
+                
+                <span class="func">AtomTween</span>.<span class="meth">shadow</span> (box1ID, <span class="num">1</span>, {delay:<span class="num">2</span>, boxshadow:<span class="str">'10px 5px 5px 1px rgba(95, 171, 234, 1)'</span>, ease:<span class="str">'ease-in-out'</span>});<br/>
+                <span class="func">AtomTween</span>.<span class="meth">shadow</span> (text1ID, 	<span class="num">1</span>, {delay:<span class="num">2</span>, textshadow:'<span class="str">10px 10px 5px rgba(95, 171, 234, 1)'</span>, ease:<span class="str">'ease-in-out'</span>}); 
+            		           
+            </div>
+        </div>
+        
+    </div>
+     
+    
+</body>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="../../src/AtomTween.js"></script>
+
+<script>
+
+	function init () {
+		// Get Elements from the DOM
+		var box1ID = AtomTween.getElement("id", "box1");
+		var text1ID = AtomTween.getElement("id", "text1");
+		AtomTween.shadow (box1ID, 	1, {delay:2, boxshadow:'10px 10px 5px 1px rgba(95, 171, 234, 1)', ease:'ease-in-out'}); 		
+		AtomTween.shadow (text1ID, 	1, {delay:2, textshadow:'10px 10px 5px rgba(95, 171, 234, 1)', ease:'ease-in-out'}); 
+		
+	}
+	
+	window.addEventListener("load", init);
+
+
+</script>
+
+</html>

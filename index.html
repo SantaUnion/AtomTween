@@ -3,62 +3,66 @@
 <head>
 <meta charset="UTF-8">
 
-<meta name=”ad.size” content=”width=900,height=600”>
-<script type="text/javascript">
-	var clickTag = "http://www.google.com"; 
-</script>
+<meta name=”ad.size” content=”width=900,height=300”>
 
 
-<title>AtomTween</title>
+<title>AtonTween: Example</title>
 
-	 <!-- CSS -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="examples/css/examples.css">
 
 <style type="text/css">
-body,td,th { color: #FFFFFF; }
-#banner { width:900px; height:300px; border:1px solid #666; position:absolute; top:0px; left:0px; background:#000; overflow:hidden;}
-.square { width:120px;height:20px; position:absolute; left:100px; top:0px;	}
-#square1 { background-color:#3AD990; top:0px; }
-#square2 { background-color:#132653; top:40px; }
-#square3 { background-color:#3D28CD; top:80px; }
-#square4 { background-color:#DAD435; top:120px; }
-#square5 { background-color:#EB2326; top:160px; }
-#square6 { background-color:#14D3B0; top:200px; }
 
-
-#test	 {background-color:#14D3B0; top:100px; left:100px; width:100px; height:100px;}
-
-#squareContainer1 { display:none;}
-
-#pixelSquare1, #pixelSquare2 {position:absolute; width:50px; height:50px; top:50px; left:50px; background:#ACACAC; opacity:0}
-
-#pixelSquare2 {top:150px; background:#ACACAC;}
-
-.blob { position:absolute; width:3px; height:3px; background:#676767; display:block; }
+	#container		{ margin:50px 50%; left:-485px;}
+	#box1			{left:20px;}
 
 </style>
+
+
 </head>
+
+
 
 <body>
 
-    <div id="banner">
-       <div id="test"></div>
-       
-	</div>
+    <div id="container">
+    	
     
+    	<div id="anim">
+            <div class="box" id="box1"><span class="centre-text">box1</span></div>
+        </div>
+        
+        <div id="info">
+        	<div id="atomTween"></div>
+            <div id="title">example:</div>
+            <div id="code">
+            		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">1</span>, {delay:<span class="num">2</span>, x:<span class="num">500</span>, opacity:<span class="num">0.5</span>, rotate:<span class="num">180</span>, scale:<span class="num">2</span>, ease:<span class="str">"ease-in"</span>});
+            
+            </div>
+        </div>
+        
+    </div>
+     
     
-    <div id="pixelSquare1"></div>
-    <div id="pixelSquare2"></div>
-    
-    
-    
-   
-
 </body>
 
-	<!-- JAVASCRIPT -->
-    <script type="text/javascript" src="src/AtomTween.js"></script>
-    <script type="text/javascript" src="src/ParticleGen.js"></script>
-    <script type="text/javascript" src="src/GetRandom.js"></script>	
-	<script type="text/javascript" src="src/anim.js"></script>
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="src/AtomTween.js"></script>
+
+<script>
+
+	function init () {
+		// Get Element from the DOM
+		var box1ID = AtomTween.getElement("id", "box1");
+	
+		// Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
+		AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
+	}
+	
+	window.addEventListener("load", init);
+
+
+</script>
 
 </html>
