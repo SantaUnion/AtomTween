@@ -120,15 +120,15 @@ AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 
 #### **transformOrigin:**
 ```javascript
-// transformOrigin: modify the origin of the transformation point of an element
-// acceptable paramters: "100% 0%", "20px 100px", 'top right'
+/* transformOrigin: modify the origin of the transformation point of an element
+   acceptable paramters: "100% 0%", "20px 100px", 'top right' */
 AtomTween.to (box1, 3, {tranformOrigin:"50% 50%", rotate:90, ease:"linear"});
 AtomTween.to (box2, 3, {tranformOrigin:"0% 0%", rotate:90, ease:"linear"});
 AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=12_transformOrigin&mode=html5' target='blank'>example</a>*
 
-#### **SkewX:**
+#### **skewX:**
 ```javascript
 // SkewX: string value - angle in degrees plus deg eg. '90deg'
 AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
@@ -136,7 +136,7 @@ AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
 
 
-#### **SkewY:**
+#### **skewY:**
 ```javascript
 // SkewY: string value - angle in degrees plus deg eg. '45deg'
 AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
@@ -144,10 +144,10 @@ AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
 
 
-#### **Skew:**
+#### **skew:**
 ```javascript
-// Skew: string value - x angle in degrees plus deg
-// separated by comma and y-angle in degrees plus deg eg. '90deg, 30deg'
+/* Skew: string value x-angle in degrees plus deg
+   separated by comma and y-angle in degrees plus deg eg. '90deg, 30deg' */
 AtomTween.to (box3ID, 4, {skew:"30deg, 30deg", ease:"ease-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
