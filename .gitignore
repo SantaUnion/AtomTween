@@ -2,8 +2,9 @@
 
 arc/
 deploy/
-development/
-documentation/
+deploy/*/
+development/*
+documentation/*
 
 *.zip
 .DS_Store
