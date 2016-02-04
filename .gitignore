@@ -1,4 +1,4 @@
-# ignore folder
+# folders
 
 arc/
 deploy/
@@ -6,6 +6,13 @@ deploy/*/
 development/*
 documentation/*
 
+# examples 
+examples/00-Div-Gen/
+examples/_old/
+examples/creative.xml
+examples/index.php
+
+# source
 src/anim.js
 src/AtomTween.beta.js
 src/AtomTween.beta.min.js
