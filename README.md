@@ -218,6 +218,18 @@ AtomTween.to (box3ID, 4, {translateZ:-500, ease:"ease-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
+#### **delayedCall:**
+```javascript
+// delayedCall: function call and time in seconds
+AtomTween.delayedCall (endAnimation, 1);
+AtomTween.to (box1ID, 4, {x:500, ease:"ease-out"});
+function endAnimation () {  
+    AtomTween.to (box2ID, 1, {x:550, ease:"ease-out"});
+}
+```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=16_delayedCall&mode=html5' target='blank'>example</a>*
+
+
 
 #### **Shadow: boxshadow / textshadow:**
 ```javascript
@@ -226,7 +238,7 @@ AtomTween.to (box3ID, 4, {translateZ:-500, ease:"ease-out"});
 AtomTween.shadow (box1ID, 	1, {delay:2, boxshadow:'10px 10px 5px 1px rgba(95, 171, 234, 1)', ease:'ease-in-out'}); 		
 AtomTween.shadow (text1ID, 	1, {delay:2, textshadow:'10px 10px 5px rgba(95, 171, 234, 1)', ease:'ease-in-out'});
 ```
-*view* *<a href='' target='blank'>example</a>*
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=17_shadow&mode=html5' target='blank'>example</a>*
 
 
 
