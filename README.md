@@ -9,7 +9,7 @@
 * Create complex CSS animation sequences with minimal code
 
 ## Property overview
-[#top]top,
+[#top]top, <a href="#top">top</a>
 
 ## API Example
 
@@ -28,6 +28,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 
 
 ### Properties
+<a name="#width">width</a>,
 
 #### **delay:**
 ```javascript
@@ -57,7 +58,7 @@ AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
 
 
 [#top]
-#### **top:**
+#### **<span id="top">top</span>:**
 ```javascript
 // top: numerical value based on pixels
 // animate element 230px from the top relative to its parent element
