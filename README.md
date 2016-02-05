@@ -294,7 +294,7 @@ function doSomething () {
 
 ## Techniques
 
-### **<span id="sequencing">Animation Sequencing and Looping</span>:**
+### **<span id="sequencing">Sequencing and Looping</span>:**
 
 ```javascript
 var del = 0;   // delay to sequencing animation
@@ -330,7 +330,7 @@ window.addEventListener('load', init);
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="pixelfitting">Pixel-Fitting</span>:**
+#### **<span name="pixelfitting">Pixel-Fitting</span>:**
 ```javascript
 // Smooth transition with x/y
 	AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
