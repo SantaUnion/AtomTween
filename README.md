@@ -8,8 +8,26 @@
 * A plethora of animation properties available including 3D transforms and function calls including onStart and onComplete
 * Create complex CSS animation <a href="#sequencing">sequences and loops</a> with minimal code
 
-####  Propertes available
-<a href="#delay">delay</a>, <a href="#opacity">opacity</a>,
+####  Usage & Techniques
+<a href="#sequencing">Sequencing and looping</a>, <a href="#pixelfitting">pixel fitting</a>
+
+## API Example
+
+**AtomTween's** API is modelled on similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with a few minor differences.
+
+
+```javascript
+// Get element from the DOM
+var box1ID = AtomTween.getElement("id", "box1");
+
+// Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
+AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
+```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=01_example&mode=html5' target='blank'>example</a>*
+
+## Properties
+<a href="#delay">delay</a>,
+<a href="#opacity">opacity</a>,
 <a href="#left">left</a>,
 <a href="#top">top</a>,
 <a href="#width">width</a>,
@@ -32,25 +50,6 @@
 <a href="#shadow">shadow</a>,
 <a href="#oncomplete">onComplete</a>,
 <a href="#onstart">onStart</a>
-
-####  Usage & Techniques
-<a href="#sequencing">Sequencing and looping</a>, <a href="#pixelfitting">pixel fitting</a>
-
-## API Example
-
-**AtomTween's** API is modelled on similar lines to [GSAP TweenLite](https://greensock.com/tweenlite) with a few minor differences.
-
-
-```javascript
-// Get element from the DOM
-var box1ID = AtomTween.getElement("id", "box1");
-
-// Delay for 2 seconds then apply paramters to several properties over 1 second with an 'ease-in'
-AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
-```
-*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=01_example&mode=html5' target='blank'>example</a>*
-
-## Properties
 
 #### **<span id="delay">delay</span>:**
 ```javascript
