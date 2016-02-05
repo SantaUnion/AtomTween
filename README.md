@@ -18,7 +18,7 @@
 <a href="#rotate">rotate</a>,
 <a href="#x">x</a>,
 <a href="#y">y</a>,
-<a href="#transformOrigin">transformOrigin</a>,
+<a href="#transformorigin">transformOrigin</a>,
 <a href="#skewX">skewX</a>,
 <a href="#skewY">skewY</a>,
 <a href="#skew">skew</a>,
@@ -142,7 +142,7 @@ AtomTween.to (box1ID, 3, {y:240, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=11_y&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="transformOrigin">transformOrigin</span>:**
+#### **<span id="transformorigin">transformOrigin</span>:**
 ```javascript
 /* transformOrigin: modify the origin of the transformation point of an element
    acceptable paramters: "100% 0%", "20px 100px", 'top right' */
@@ -293,7 +293,7 @@ function doSomething () {
 
 
 
-### Animation Sequencing and looping
+### Animation Sequencing and Looping
 
 ```javascript
 var del = 0;   // delay to sequencing animation
