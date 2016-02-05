@@ -30,10 +30,8 @@
 <a href="#translatey">translateY</a>,
 <a href="#translatez">translateZ</a>,
 <a href="#shadow">shadow</a>,
-<a href="#shadow">boxshadow</a>,
-<a href="#shadow">textshadow</a>,
-<a href="#shadow">textshadow</a>,
-[onStart](#onStart)
+<a href="#oncomplete">onComplete</a>,
+<a href="#onstart">onStart</a>,
 
 
 ## API Example
