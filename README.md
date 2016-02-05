@@ -8,8 +8,7 @@
 * A plethora of animation properties available including 3D transforms and function calls including onStart and onComplete
 * Create complex CSS animation <a href="#sequencing">sequences and loops</a> with minimal code
 
-####  Usage & Techniques
-<a href="#sequencing">Sequencing and looping</a>, <a href="#pixelfitting">pixel fitting</a>
+
 
 ## API Example
 
@@ -24,6 +23,9 @@ var box1ID = AtomTween.getElement("id", "box1");
 AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease:"ease-in"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=01_example&mode=html5' target='blank'>example</a>*
+
+## Usage & Techniques
+<a href="#sequencing">Sequencing and looping</a>, <a href="#pixelfitting">pixel fitting</a>
 
 ## Properties
 <a href="#delay">delay</a>,
@@ -332,10 +334,10 @@ window.addEventListener('load', init);
 ### **<span name="pixelfitting">x/y versus left/top</span>:**
 ```javascript
 // Smooth transition with x/y
-	AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
+AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
 
-	// Rough jumpy transition with left/top
-	AtomTween.to (lefttopID, 5, {left:800, top:225, ease:"ease-in-out"});
+// Rough jumpy transition with left/top
+AtomTween.to (lefttopID, 5, {left:800, top:225, ease:"ease-in-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=21_x_y_versus_left_top&mode=html5' target='blank'>example</a>*
 
