@@ -34,7 +34,7 @@
 <a href="#onstart">onStart</a>
 
 ####  Usage & Techniques
-<a href="#sequencing">Sequencing and looping</a>, <a href="#xyversustopleft">x/y versus left/top</a>
+<a href="#sequencing">Sequencing and looping</a>, <a href="#pixelfitting">pixel fitting</a>
 
 ## API Example
 
@@ -50,6 +50,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=01_example&mode=html5' target='blank'>example</a>*
 
+## Properties
 
 #### **<span id="delay">delay</span>:**
 ```javascript
@@ -329,7 +330,7 @@ window.addEventListener('load', init);
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="xyversustopleft">x/y versus left/top</span>:**
+#### **<span id="pixelfitting">Pixel-Fitting</span>:**
 ```javascript
 // Smooth transition with x/y
 	AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
