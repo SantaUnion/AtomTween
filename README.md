@@ -6,7 +6,7 @@
 * Simple API
 * Fast and silky smooth CSS animation
 * A plethora of animation properties available including 3D transforms and methods including onStart and onComplete
-* Create complex CSS animation <a href="#sequencing">sequences</a> with minimal code
+* Create complex CSS animation <a href="#sequencing">sequences and loops</a> with minimal code
 
 ####  Propertes available
 <a href="#delay">delay</a>, <a href="#opacity">opacity</a>,
