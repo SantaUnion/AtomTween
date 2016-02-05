@@ -1,26 +1,17 @@
-/* 	
-		AtomTween (v1.0 )
-		Code by:
-		Lee Redmond 
-		lee@santaunion.co.uk
-		
-        Description: - Super light weight CSS animation engine for modern browsers
-					 - API similar to Greensock TweenNano for Flash! Remember that?
-					 - however this heavily uses setTimout to apply CSS properties and transforms to objects.
-					 - Please use with caution - this is by not means as advanced or robust as GSAP but is 
-					   a good solution to achieve very lightweight animation sequences
-		beta.v16 	-  KillAllTweens - not working
-					-  KillTween (obj) - working on most common properties
-					-  Transforms are string concatenated allowing for multiple transforms on a single object
-					-  OnComplete function 
-		beta.v17	-  left/top animation method changed to translateX and TranslateY which ensures smoother transitions
-					   and effective used of GPU - works well on Chrome - see http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/
-					   also pixel fitting - http://dcurt.is/pixel-fitting
-		beta.v18	-  Left / Top properties are now distrinct from TranslateX / TranslateY and can now be addressed directly through the API
-		beta.v19	-  Delaycall function added
-		
+/**
+	* @author					Lee Redmond <lee@santaunion.co.uk>
+	* @title					AtomTween
+	* @version				    1.0
+	* @since					2015-07-04
+	* @github					https://github.com/SantaUnion/AtomTween
+	* @description		        A lightweight and versatile Javascript CSS Animation Engine for Modern Browsers
+	* @api						AtomTween API is similar to GSAP TweenLite
+	* example					var myID = AtomTween.getElement("id", "myDiv");
+								AtomTween.to (myID, 4, {delay:1, y:92, x:104, width:300, height:20, scale:2, rotate:30, opacity:0.25, ease:"ease-in-out"});
 */
-     
+
+
+
 // Anonymous self-executing function	 
 
 var	AtomTween 		= {};
