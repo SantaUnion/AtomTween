@@ -33,7 +33,7 @@
 <a href="#shadow">boxshadow</a>,
 <a href="#shadow">textshadow</a>,
 <a href="#shadow">textshadow</a>,
-[shadow](#textshadow)
+[onStart](#onStart)
 
 
 ## API Example
@@ -136,7 +136,7 @@ AtomTween.to (box1ID, 1, {x:500, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=10_x&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="y">y</span>y:**
+#### **<span id="y">y</span>:**
 ```javascript
 // y: numerical value in pixels. Use 'y' in preference to 'left' for smoother css transitions
 // animate element 240px on the y-axis relative its parent element
