@@ -269,31 +269,41 @@ function doSomething () {
 
 
 
-### Animation Sequencing Technique
+### Animation Sequencing and looping
 
 ```javascript
-var del = 0; // use delay to sequencing animation
-var redboxID = AtomTween.getElement("id", "box1");
-var blueboxID = AtomTween.getElement("id", "box2");
-var greenboxID = AtomTween.getElement("id", "box3");
+var del = 0;   // delay to sequencing animation
+var sp	= 0.5; // set speed of animation
+var box1ID = AtomTween.getElement("id", "box1");
+var box2ID = AtomTween.getElement("id", "box2");
+var box3ID = AtomTween.getElement("id", "box3");
 
 function init() {
-    del = 0;
-    AtomTween.to (redboxID, 0, {delay:0, x:100, y:100, scale:1, opacity:1, ease:"ease-in-out"});
-    AtomTween.to (blueboxID, 0, {delay:0, x:200, y:100, scale:1, opacity:1, ease:"ease-in-out"});
-    AtomTween.to (greenboxID, 0, {delay:0, x:300, y:100, scale:1, opacity:1, ease:"ease-in-out"});
-    animate();
+		del = 0;
+		AtomTween.to (box1ID, 1 * sp, {delay:0, x:375, y:130, scale:1, opacity:1, ease:"ease-in-out"});
+		AtomTween.to (box2ID, 1 * sp, {delay:0, x:425, y:130, scale:1, opacity:1, ease:"ease-in-out"});
+		AtomTween.to (box3ID, 1 * sp, {delay:0, x:475, y:130, scale:1, opacity:1, onComplete:animate, ease:"ease-in-out"});
 }
 
 function animate () {
-    AtomTween.to (redboxID, 1, {delay:del+=1, x:200, opacity:0, ease:"ease-in-out"});
-    AtomTween.to (blueboxID, 1, {delay:del+=1, y:600, scale:2, ease:"ease-in-out"});
-    AtomTween.to (greenboxID, 1, {delay:del+=2, x:400, rotate:360, ease:"ease-in-out"});
-    AtomTween.to (box1ID, 1, {delay:del+=1, scale:3, onComplete:init, ease:"ease-in-out"});
+
+		AtomTween.to (box1ID, 1 * sp, {delay:del+=1 * sp, x:200, opacity:0.5, rotateY:180, rotateZ:45, scale:2, ease:"ease-in-out"});
+		AtomTween.to (box2ID, 1 * sp, {delay:del+=1 * sp, scale:2, x:425, y:130, ease:"ease-in-out"});
+		AtomTween.to (box3ID, 1 * sp, {delay:del+=1 * sp, x:800, y:130, rotateX:180, ease:"ease-in-out"});
+
+		// Set some random positions
+		AtomTween.to (box1ID, 1 * sp, {delay:del+=1 * sp, x:getRnd(800), y:getRnd(200), ease:"ease-in-out"});
+		AtomTween.to (box2ID, 1 * sp, {delay:del+=1 * sp, x:getRnd(800), y:getRnd(200), ease:"ease-in-out"});
+		AtomTween.to (box3ID, 1 * sp, {delay:del+=0 * sp, x:getRnd(800), y:getRnd(200), onComplete:init, ease:"ease-in-out"});
 }
 
-window.addEventListener('load', init);
+// get random rumber
+function getRnd (n) { return Math.round(Math.random() * n) + 1; }
 
+window.addEventListener('load', init);
 ```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
+
+
 
 Copyright (c) 2016, Santa Union. All rights reserved.
