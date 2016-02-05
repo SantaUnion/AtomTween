@@ -292,7 +292,7 @@ function doSomething () {
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=19_onStart&mode=html5' target='blank'>example</a>*
 
-
+## Techniques
 
 ### **<span id="sequencing">Animation Sequencing and Looping</span>:**
 
