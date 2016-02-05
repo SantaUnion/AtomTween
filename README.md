@@ -152,7 +152,7 @@ AtomTween.to (box3, 3, {tranformOrigin:"100% 100%", rotate:90, ease:"linear"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=12_transformOrigin&mode=html5' target='blank'>example</a>*
 
-#### **<span id="skewX">skewX</span>:**
+#### **<span id="skewx">skewX</span>:**
 ```javascript
 // SkewX: string value - angle in degrees plus deg eg. '90deg'
 AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
@@ -160,7 +160,7 @@ AtomTween.to (box1ID, 4, {skewX:"30deg", ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=13_skewXY&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="skewY">skewY</span>:**
+#### **<span id="skewy">skewY</span>:**
 ```javascript
 // SkewY: string value - angle in degrees plus deg eg. '45deg'
 AtomTween.to (box2ID, 4, {skewY:"30deg", ease:"ease-out"});
@@ -189,7 +189,7 @@ AtomTween.to (containerID, 0, {perspective:500});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="rotateX">rotateX</span>:**
+#### **<span id="rotatex">rotateX</span>:**
 ```javascript
 // rotateX: angle in degrees
 // rotateX clockwise by 90° degrees over 1 second
@@ -198,7 +198,7 @@ AtomTween.to (box1ID, 1, {rotateX:90, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="rotateY">rotateY</span>:**
+#### **<span id="rotatey">rotateY</span>:**
 ```javascript
 // rotateY: angle in degrees
 // rotateY anti-clockwise by 45° degrees over 1 second
@@ -207,7 +207,7 @@ AtomTween.to (box1ID, 1, {rotateY:-45, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="rotateZ">rotateZ</span>:**
+#### **<span id="rotatez">rotateZ</span>:**
 ```javascript
 // rotateZ: angle in degrees
 // rotateZ clockwise 180° degrees over 1 second
@@ -216,7 +216,7 @@ AtomTween.to (box1ID, 1, {rotateZ:180, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=14_rotateXYZ&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="translateX">translateX</span>:**
+#### **<span id="translatex">translateX</span>:**
 ```javascript
 // translateX: numerical value in pixels
 // translateX -50px
@@ -225,7 +225,7 @@ AtomTween.to (box1ID, 4, {translateX:-50, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="translateY">translateY</span>:**
+#### **<span id="translatey">translateY</span>:**
 ```javascript
 // translateY: numerical value in pixels
 // translateY 50px
@@ -234,7 +234,7 @@ AtomTween.to (box2ID, 4, {translateY:50, ease:"ease-out"});
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="translateZ">translateZ</span>:**
+#### **<span id="translatez">translateZ</span>:**
 ```javascript
 // translateZ: numerical value in pixels
 // translateZ -500px
@@ -242,7 +242,7 @@ AtomTween.to (box3ID, 4, {translateZ:-500, ease:"ease-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=15_translateXYZ&mode=html5' target='blank'>example</a>*
 
-#### **<span id="delayedCall">delayedCall</span>:**
+#### **<span id="delayedcall">delayedCall</span>:**
 ```javascript
 // delayedCall: function call and time in seconds
 AtomTween.delayedCall (endAnimation, 1);
@@ -270,7 +270,7 @@ AtomTween.shadow (text1ID, 	1, {delay:2, textshadow:'10px 10px 5px rgba(95, 171,
 
 
 
-#### **<span id="onComplete">onComplete</span>:**
+#### **<span id="oncomplete">onComplete</span>:**
 ```javascript
 // onComplete: call function once element animation has finished
 AtomTween.to (box1ID, 2, {delay:0, x:500, onComplete:doSomething, ease:"ease-in-out"});
@@ -281,7 +281,7 @@ function doSomething () {
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=18_onComplete&mode=html5' target='blank'>example</a>*
 
 
-#### **<span id="onStart">onStart</span>:**
+#### **<span id="onstart">onStart</span>:**
 ```javascript
 // onStart: call function once element animation has finished
 AtomTween.to (box1ID, 2, {delay:3, x:500, onStart:doSomething, ease:"ease-in-out"});
@@ -293,7 +293,7 @@ function doSomething () {
 
 
 
-### Animation Sequencing and Looping
+### **<span id="sequencing">Animation Sequencing and Looping</span>:**
 
 ```javascript
 var del = 0;   // delay to sequencing animation
