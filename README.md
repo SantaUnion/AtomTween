@@ -5,7 +5,7 @@
 * Super lightweight 5KB library, ideal for standard HTML5 banners
 * Simple API
 * Fast and silky smooth CSS animation
-* A plethora of animation properties available including 3D transforms and methods including onStart and onComplete
+* A plethora of animation properties available including 3D transforms and function calls including onStart and onComplete
 * Create complex CSS animation <a href="#sequencing">sequences and loops</a> with minimal code
 
 ####  Propertes available
@@ -31,8 +31,10 @@
 <a href="#translatez">translateZ</a>,
 <a href="#shadow">shadow</a>,
 <a href="#oncomplete">onComplete</a>,
-<a href="#onstart">onStart</a>,
+<a href="#onstart">onStart</a>
 
+####  Usage & Techniques
+<a href="#sequencing">Sequencing and looping</a>, <a href="#xyversustopleft">x/y versus left/top</a>
 
 ## API Example
 
@@ -325,6 +327,19 @@ function getRnd (n) { return Math.round(Math.random() * n) + 1; }
 window.addEventListener('load', init);
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
+
+
+#### **<span id="xyversustopleft">x/y versus left/top</span>:**
+```javascript
+// Smooth transition with x/y
+	AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
+
+	// Rough jumpy transition with left/top
+	AtomTween.to (lefttopID, 5, {left:800, top:225, ease:"ease-in-out"});
+```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=21_x_y_versus_left_top&mode=html5' target='blank'>example</a>*
+
+
 
 
 
