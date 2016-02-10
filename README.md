@@ -332,7 +332,7 @@ window.addEventListener('load', init);
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
 
 
-### **<span>x/y versus left/top:</span>** <a id="#test"></a>
+### **<span id="test">x/y versus left/top</span>:**
 ```javascript
 // Smooth transition with x/y
 AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
