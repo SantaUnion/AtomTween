@@ -26,6 +26,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 
 ## Usage & Techniques
 <a href="#techniques">Sequencing and loops</a>,
+<a href="#pixel">pixel fitting</a>,
 [pixel fitting](#pixel)
 
 ## Properties
