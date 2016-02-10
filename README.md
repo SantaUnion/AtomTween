@@ -79,8 +79,6 @@ AtomTween.to (box1ID, 1, {left:500, ease:"ease-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=04_left&mode=html5' target='blank'>example</a>*
 
-
-[#top]
 #### **<span id="top">top</span>:**
 ```javascript
 // top: numerical value based on pixels
