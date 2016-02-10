@@ -327,7 +327,7 @@ function getRnd (n) { return Math.round(Math.random() * n) + 1; }
 
 window.addEventListener('load', init);
 ```
-*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='_blank'>example</a>*
 
 ### **<span id="pixel-fitting">Pixel-Fitting</span>:**
 ```javascript
@@ -337,7 +337,7 @@ AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
 // Rough jumpy transition with left/top
 AtomTween.to (lefttopID, 5, {left:800, top:225, ease:"ease-in-out"});
 ```
-*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=21_x_y_versus_left_top&mode=html5' target='blank'>example</a>*
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=21_x_y_versus_left_top&mode=html5' target='_blank'>example</a>*
 
 
 
