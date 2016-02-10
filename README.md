@@ -345,4 +345,4 @@ AtomTween.to (lefttopID, 5, {left:800, top:225, ease:"ease-in-out"});
 
 
 
-Copyright (c) 2016, Santa Union. All rights reserved.
+Copyright (c) 2016, Santa Union Ltd.
