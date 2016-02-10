@@ -6,7 +6,7 @@
 * Simple API
 * Fast and silky smooth CSS animation
 * A plethora of animation properties available including 3D transforms and function calls including onStart and onComplete
-* Create complex CSS animation <a href="#sequencing">sequences and loops</a> with minimal code
+* Create complex CSS animated sequences and loops with minimal code
 
 
 
@@ -56,7 +56,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 
 #### **<span id="delay">delay</span>:**
 ```javascript
-// delay: numerical value in seconds
+// delay: numerical value in seconds d
 // delay the animation on element by 5 seconds
 AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 ```
