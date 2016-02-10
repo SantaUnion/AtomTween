@@ -6,7 +6,7 @@
 * Simple API
 * Fast and silky smooth CSS animation
 * A plethora of animation properties available including 3D transforms and function calls including onStart and onComplete
-* Create complex CSS animated sequences and loops with minimal code
+* Create complex CSS animated sequences with minimal code
 
 
 
@@ -25,7 +25,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=01_example&mode=html5' target='blank'>example</a>*
 
 ## Usage & Techniques
-<a href="#sequencing">Sequencing and loops</a>,
+<a href="#techniques">Sequencing and loops</a>,
 <a href="#pixelfitting">pixel fitting</a>
 
 ## Properties
@@ -296,7 +296,7 @@ function doSomething () {
 
 ## Techniques
 
-### **<span id="sequencing">Sequencing and Loops</span>:**
+### **<span id="techniques">Sequencing and Loops</span>:**
 
 ```javascript
 var del = 0;   // delay to sequencing animation
