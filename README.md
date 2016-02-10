@@ -26,8 +26,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 
 ## Usage & Techniques
 <a href="#techniques">Sequencing and loops</a>,
-<a href="#pixel">pixel fitting</a>,
-[pixel fitting](#pixel)
+<a href="#test">pixel fitting</a>
 
 ## Properties
 <a href="#delay">delay</a>,
@@ -333,7 +332,7 @@ window.addEventListener('load', init);
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=20_sequencing_and_looping&mode=html5' target='blank'>example</a>*
 
 
-### **<span>x/y versus left/top:</span>** <a id="#pixel"></a>
+### **<span>x/y versus left/top:</span>** <a id="#test"></a>
 ```javascript
 // Smooth transition with x/y
 AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
