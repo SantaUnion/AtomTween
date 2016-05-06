@@ -18,6 +18,7 @@ var	AtomTween 		= {};
 var	aTweens 			= [];
 var	aElementID		= [];
 var	nTweenID;
+var bTrace 			= false; // display trace
 
 (function(window) {
     
@@ -73,7 +74,7 @@ var	nTweenID;
 		  
 		  if (arg.ease == null) { arg.ease == 'linear'; }
 		  
-		  CssUtil.applyCssWithBrowserPrefix(object,'transition','all ' + seconds + 's ' + arg.ease);
+		  CssUtil.cssVendorPrefix(object,'transition','all ' + seconds + 's ' + arg.ease);
 		   
 
 		  // --------------------------------------------------
@@ -82,7 +83,7 @@ var	nTweenID;
 	  
 		  if (arg.perspective != null) {
 			  trace (">> perspective");
-			  CssUtil.applyCssWithBrowserPrefix(object,'perspective', arg.perspective + 'px');		  
+			  CssUtil.cssVendorPrefix(object,'perspective', arg.perspective + 'px');		  
 		  }
 		  
 		  // --------------------------------------------------
@@ -91,7 +92,7 @@ var	nTweenID;
 	  
 		  if (arg.opacity != null) {
 			  trace (">> Opacity");
-			  CssUtil.applyCssWithBrowserPrefix(object,'opacity', arg.opacity); 
+			  CssUtil.cssVendorPrefix(object,'opacity', arg.opacity); 
 		  }
 		  
 		  // --------------------------------------------------
@@ -100,7 +101,7 @@ var	nTweenID;
 	  	
 		  if (arg.left != null) {
 			  trace (">> Left");
-			  CssUtil.applyCssWithBrowserPrefix(object,'left', arg.left + 'px');
+			  CssUtil.cssVendorPrefix(object,'left', arg.left + 'px');
 		  }
 		  
 		  // --------------------------------------------------
@@ -109,7 +110,7 @@ var	nTweenID;
 		  
 		  if (arg.top != null) {
 			  trace (">> Top");
-			  CssUtil.applyCssWithBrowserPrefix(object,'top', arg.top + 'px'); 
+			  CssUtil.cssVendorPrefix(object,'top', arg.top + 'px'); 
 		  }
 		  
 		  // --------------------------------------------------
@@ -118,7 +119,7 @@ var	nTweenID;
 		  
 		  if (arg.width != null) {
 			  trace (">> Width");
-			  CssUtil.applyCssWithBrowserPrefix(object,'width', arg.width + 'px'); 
+			  CssUtil.cssVendorPrefix(object,'width', arg.width + 'px'); 
 		  }
 		  
 		  // --------------------------------------------------
@@ -127,7 +128,7 @@ var	nTweenID;
 		  
 		  if (arg.height != null) {
 			  trace (">> Height");
-			  CssUtil.applyCssWithBrowserPrefix(object,'height', arg.height + 'px'); 
+			  CssUtil.cssVendorPrefix(object,'height', arg.height + 'px'); 
 		  }
 		  
 		 
@@ -271,14 +272,10 @@ var	nTweenID;
 		  // --------------------------------------------------
 	  
 		  if (arg.tranformOrigin != null) {
-			  console.log ('>>>> transform-origin(' + arg.tranformOrigin + ' ');
+			  trace ('>>>> transform-origin(' + arg.tranformOrigin + ' ');
 			  // sTransformSetting += 'transform-origin:' + arg.tranformOrigin + ' ';
-			  CssUtil.applyCssWithBrowserPrefix(object,'transform-origin', arg.tranformOrigin);
+			  CssUtil.cssVendorPrefix(object,'transform-origin', arg.tranformOrigin);
 		  }
-		  
-		  
-		  
-		 
 		  
 		  
 		  // --------------------------------------------------
@@ -286,7 +283,7 @@ var	nTweenID;
 		  // -------------------------------------------------- 
 		  
 		  if (sTransformSetting != "") {
-			CssUtil.applyCssWithBrowserPrefix(object,'transform', sTransformSetting);  
+			CssUtil.cssVendorPrefix(object,'transform', sTransformSetting);  
 		  }
 		  
 		  // --------------------------------------------------
@@ -298,7 +295,7 @@ var	nTweenID;
 		  }
 		  
 		  
-		   // --------------------------------------------------
+		  // --------------------------------------------------
 		  // OnComplete : function call
 		  // -------------------------------------------------- 
 		  
@@ -309,7 +306,7 @@ var	nTweenID;
 		  
 		  
 		
-	  	  /* -------- of AtomTween.to -------- */
+	  	  /* -------- end of AtomTween.to -------- */
 	  
 	  }, arg.delay * 1000));
 		
@@ -319,12 +316,18 @@ var	nTweenID;
 	
 	
 	
-	// ------------------------------------------------------------
-	// AtomTween.shadow' function
-	// ------------------------------------------------------------
+	/* 
+	------------------------------------------------------------
+	>>> AtomTween.shadow' function
+	------------------------------------------------------------
 	
-	// AtomTween.shadow (idShadow, 	1, {delay:0, boxshadow:'5px 5px 5px 1px rgba(100, 100, 100, 1)', ease:'ease-in-out'}); 
-	// AtomTween.shadow (idShadow, 	1, {delay:0, textshadow:'10px 5px 5px 1px rgba(0, 255, 0, 1)', ease:'ease-in-out'}); 
+	Example:
+	AtomTween.shadow (idShadow, 	1, {delay:0, boxshadow:'5px 5px 5px 1px rgba(100, 100, 100, 1)', ease:'ease-in-out'}); 
+	AtomTween.shadow (idShadow, 	1, {delay:0, textshadow:'10px 5px 5px 1px rgba(0, 255, 0, 1)', ease:'ease-in-out'}); 
+	
+	------------------------------------------------------------
+	*/
+	
 	
 	AtomTween.shadow = function (object, seconds, arg) {
 		
@@ -340,52 +343,51 @@ var	nTweenID;
 			
 			if (arg.boxshadow != null) {
 				// alert ("boxshadow");
-				CssUtil.applyCssWithBrowserPrefix(object,'transition','all ' + seconds + 's ' + arg.ease);
-				CssUtil.applyCssWithBrowserPrefix(object,'box-shadow', arg.boxshadow);	
+				CssUtil.cssVendorPrefix(object,'transition','all ' + seconds + 's ' + arg.ease);
+				CssUtil.cssVendorPrefix(object,'box-shadow', arg.boxshadow);	
 			}
 			
 			if (arg.textshadow != null) {
 				// alert ("textshadow");
-				CssUtil.applyCssWithBrowserPrefix(object,'transition','all ' + seconds + 's ' + arg.ease);
-				CssUtil.applyCssWithBrowserPrefix(object,'text-shadow', arg.textshadow);	
+				CssUtil.cssVendorPrefix(object,'transition','all ' + seconds + 's ' + arg.ease);
+				CssUtil.cssVendorPrefix(object,'text-shadow', arg.textshadow);	
 			}
 		
 		}, arg.delay * 1000));
 	
 	}
 	
-	
-	// ------------------------------------------------------------
-	// AtomTween.kill  function - kill individual tween
-	// ------------------------------------------------------------
-	
+	/*
+	------------------------------------------------------------
+	>>> AtomTween.kill  function - kill individual tween
+	------------------------------------------------------------
+	*/
 	
 	AtomTween.kill = function (object,delay) {
 		
-		// CssUtil.applyCssWithBrowserPrefix(object,'transition','none !important');
+		// CssUtil.cssVendorPrefix(object,'transition','none !important');
 		
 		setTimeout(function(){
 			// alert (object.id);	
 			//
-			CssUtil.applyCssWithBrowserPrefix(object,'transform','none');
-			// CssUtil.applyCssWithBrowserPrefix(object,'transition','none');
-			// CssUtil.applyCssWithBrowserPrefix(object,'animation-play-state','paused');
-			// CssUtil.applyCssWithBrowserPrefix(object,'animation','0');
+			CssUtil.cssVendorPrefix(object,'transform','none');
+			// CssUtil.cssVendorPrefix(object,'transition','none');
+			// CssUtil.cssVendorPrefix(object,'animation-play-state','paused');
+			// CssUtil.cssVendorPrefix(object,'animation','0');
 			
-			CssUtil.applyCssWithBrowserPrefix(object,'transition-property','none !important');
-			 CssUtil.applyCssWithBrowserPrefix(object,'transition','none');
-			 
-			 
+			CssUtil.cssVendorPrefix(object,'transition-property','none !important');
+			 CssUtil.cssVendorPrefix(object,'transition','none');
 			
 		}, delay * 1000);
 		
 	}
 	
 	
-	
-	// ------------------------------------------------------------
-	// AtomTween.KillAll  function - kill all tweens
-	// ------------------------------------------------------------
+	/*
+	------------------------------------------------------------
+	>>> AtomTween.KillAll  function - kill all tweens
+	------------------------------------------------------------
+	*/
 	
 	AtomTween.killAll = function () {
 	
@@ -403,10 +405,12 @@ var	nTweenID;
 		
 	}
 	
+	/*
+	------------------------------------------------------------
+	>>> AtomTween.KillTween function - kill tween on object
+	------------------------------------------------------------
+	*/
 	
-	// ------------------------------------------------------------
-	// AtomTween.KillTween function - kill tween on object
-	// ------------------------------------------------------------
 	/*
 	AtomTween.KillTween = function (object) {
 	
@@ -439,7 +443,7 @@ var	nTweenID;
 		
 		// With rotate(30deg)...
 		// matrix(0.866025, 0.5, -0.5, 0.866025, 0px, 0px)
-		console.log('Matrix: ' + tr);
+		trace('Matrix: ' + tr);
 		// rotation matrix - http://en.wikipedia.org/wiki/Rotation_matrix
 		
 		// var values = tr.split('(')[1].split(')')[0].split(',');
@@ -458,7 +462,7 @@ var	nTweenID;
 		// Scale
 		// ---------------------
 		var scale = Math.sqrt(a*a + b*b);
-		CssUtil.applyCssWithBrowserPrefix(object,'transform', 'scale('+ scale + ',' + scale + ')');
+		CssUtil.cssVendorPrefix(object,'transform', 'scale('+ scale + ',' + scale + ')');
 		var sScaleSetting = 'scale('+ scale + ',' + scale + ') ';
 	
 		// ---------------------	
@@ -470,28 +474,27 @@ var	nTweenID;
 		// var angle = Math.round(Math.asin(sin) * (180/Math.PI));
 		var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
 		// var angle = Math.round(Math.asin(sin) * (180/Math.PI));
-		CssUtil.applyCssWithBrowserPrefix(object,'transform', 'rotate('+ angle + 'deg)');	
+		CssUtil.cssVendorPrefix(object,'transform', 'rotate('+ angle + 'deg)');	
 		
 		var sRotateSetting = 'rotate('+ angle + 'deg) ';
 		
-		CssUtil.applyCssWithBrowserPrefix(object,'transform', sScaleSetting + sRotateSetting);
+		CssUtil.cssVendorPrefix(object,'transform', sScaleSetting + sRotateSetting);
 
 	
 	}
 	*/
 	
 	
-    
-    // --------------------------------------------------
-	// CSS Util - browser vendor prefixer
-    // --------------------------------------------------
-    
+    /*
+    --------------------------------------------------
+	>>> CSS Util - css vendor prefixer
+    --------------------------------------------------
+    */
     
     /**
     * @fileoverview Utility function for working with CSS.
     * @author paulyang@google.com (Paul Yang)
     */
-
 
     var CssUtil = {};
 
@@ -512,12 +515,12 @@ var	nTweenID;
     * @param {boolean=} bOptPrefixOnValue Whether or not to add the borwser prefix to the value, too.
     */
     
-    CssUtil.applyCssWithBrowserPrefix = function( idElement, sProperty, sValue, bOptPrefixOnValue) {
+    CssUtil.cssVendorPrefix = function( idElement, sProperty, sValue, bOptPrefixOnValue) {
 
      for (var i = 0; i < CssUtil.aBrowserPrefixes.length; ++i) {
         try{
             idElement.style[CssUtil.aBrowserPrefixes[i] + sProperty] = (bOptPrefixOnValue ? CssUtil.aBrowserPrefixes[i] : '') + sValue;
-			// trace ("•••• " + [CssUtil.aBrowserPrefixes[i] + sProperty] + " " + (bOptPrefixOnValue ? CssUtil.aBrowserPrefixes[i] : '') + sValue);
+			// trace (">>> " + [CssUtil.aBrowserPrefixes[i] + sProperty] + " " + (bOptPrefixOnValue ? CssUtil.aBrowserPrefixes[i] : '') + sValue);
           
 
        }catch(e){}
@@ -554,7 +557,9 @@ var	nTweenID;
     // --------------------------------------------------
 	
 	function trace(msg){
-  		console.log (msg);
+		if (bTrace) {
+  			console.log (msg);
+		}
 	}
     
 	// --------------------------------------------------
