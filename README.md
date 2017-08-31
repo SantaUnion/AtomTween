@@ -5,7 +5,7 @@
 * Super lightweight 5KB library, ideal for standard HTML5 banners
 * Simple API
 * Fast and silky smooth CSS animation
-* A plethora of animation properties available including 3D transforms and function calls including onStart and onComplete.
+* A plethora of animation properties available including 3D transforms and function calls like onStart and onComplete.
 * Animate multiple objects from a single line of code.
 * Animation methods include 'to' and 'set'
 * Create complex CSS animated sequences with minimal code
