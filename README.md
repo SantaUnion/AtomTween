@@ -1,4 +1,4 @@
-# AtomTween
+# AtomTween 2.0
 
 #### A lightweight and versatile Javascript CSS Animation Engine for Modern Browsers
 
@@ -62,12 +62,18 @@ AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=02_delay&mode=html5' target='blank'>example</a>*
 
+#### **<span id="set">set method</span>:**
+```javascript
+// set: method used to set properties on an object or objects
+// set the x position to 800 and the opacity to 50 on two elements
+AtomTween.set ([box1ID, box2ID], {x:800, opacity:50});
+```
 
 #### **<span id="opacity">opacity</span>:**
 ```javascript
 // opacity: numerical value from 0 to 100
-// animate elements opacity to 0 over 5 seconds
-AtomTween.to (box1ID, 5, {opacity:0, ease:"ease-out"});
+// animate the opacity of two elements to 0 over 5 seconds
+AtomTween.to ([box1ID, box2ID ], 5, {opacity:0, ease:"ease-out"});
 ```
 *view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=03_opacity&mode=html5' target='blank'>example</a>*
 
