@@ -30,6 +30,7 @@ AtomTween.to (box1ID, 1, {delay:2, x:500, opacity:0.5, rotate:180, scale:2, ease
 
 ## Properties
 <a href="#delay">delay</a>,
+<a href="#set">set</a>,
 <a href="#opacity">opacity</a>,
 <a href="#left">left</a>,
 <a href="#top">top</a>,
@@ -68,6 +69,8 @@ AtomTween.to (box1ID, 1, {delay:5, x:800, ease:"ease-out"});
 // set the x position to 800 and the opacity to 50 on two elements
 AtomTween.set ([box1ID, box2ID], {x:800, opacity:50});
 ```
+*view* *<a href='http://santaunion.co.uk//repos/atomtween/examples/index.php?format=02_delay&mode=html5' target='blank'>example</a>*
+
 
 #### **<span id="opacity">opacity</span>:**
 ```javascript

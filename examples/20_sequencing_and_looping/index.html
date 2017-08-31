@@ -14,40 +14,40 @@
 <style type="text/css">
 
 	#threeD			{ position:absolute; top:0px; left:0px; width:900px; height:300px; }
-	
-	
+
+
 </style>
 
 <body>
 
     <div id="container">
-    	
-    
+
+
     	<div id="boxContainer">
-           
-            
+
+
     		<div class="box" id="box1"><span class="centre-text">box1</span></div>
             <div class="box" id="box2"><span class="centre-text">box2</span></div>
             <div class="box" id="box3"><span class="centre-text">box3</span></div>
         </div>
-        
+
         <div id="info">
         	<div id="atomTween"></div>
             <div id="title">Animation Sequencing and looping:</div>
             <div id="code">
-            
-            		
-            		           
+
+
+
             </div>
         </div>
-        
+
     </div>
-     
-    
+
+
 </body>
 
 <!-- JAVASCRIPT -->
-<script type="text/javascript" src="../../src/AtomTween.js"></script>
+<script type="text/javascript" src="../../src/AtomTween.2.0.js"></script>
 
 <script>
 
@@ -56,29 +56,29 @@
 	var box1ID = AtomTween.getElement("id", "box1");
 	var box2ID = AtomTween.getElement("id", "box2");
 	var box3ID = AtomTween.getElement("id", "box3");
-	
+
 	function init() {
 		del = 0;
 		AtomTween.to (box1ID, 1 * sp, {delay:0, x:375, y:130, scale:1, opacity:1, ease:"ease-in-out"});
 		AtomTween.to (box2ID, 1 * sp, {delay:0, x:425, y:130, scale:1, opacity:1, ease:"ease-in-out"});
 		AtomTween.to (box3ID, 1 * sp, {delay:0, x:475, y:130, scale:1, opacity:1, onComplete:animate, ease:"ease-in-out"});
 	}
-	
+
 	function animate () {
-		
+
 		AtomTween.to (box1ID, 1 * sp, {delay:del+=1 * sp, x:200, opacity:0.5, rotateY:180, rotateZ:45, scale:2, ease:"ease-in-out"});
 		AtomTween.to (box2ID, 1 * sp, {delay:del+=1 * sp, scale:2, x:425, y:130, ease:"ease-in-out"});
 		AtomTween.to (box3ID, 1 * sp, {delay:del+=1 * sp, x:800, y:130, rotateX:180, ease:"ease-in-out"});
-		
+
 		// Set some random positions
 		AtomTween.to (box1ID, 1 * sp, {delay:del+=1 * sp, x:getRnd(800), y:getRnd(200), ease:"ease-in-out"});
 		AtomTween.to (box2ID, 1 * sp, {delay:del+=1 * sp, x:getRnd(800), y:getRnd(200), ease:"ease-in-out"});
 		AtomTween.to (box3ID, 1 * sp, {delay:del+=0 * sp, x:getRnd(800), y:getRnd(200), onComplete:init, ease:"ease-in-out"});
 	}
-	
+
 	// get random rumber
 	function getRnd (n) { return Math.round(Math.random() * n) + 1; }
-	
+
 	window.addEventListener('load', init);
 
 

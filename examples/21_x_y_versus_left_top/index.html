@@ -14,51 +14,51 @@
 <style type="text/css">
 
 	#threeD			{ position:absolute; top:0px; left:0px; width:900px; height:300px; }
-	
+
 	.box			{ }
-	
+
 	#box1			{ position:absolute; left:20px; top:140px; width:60px; height:60px;}
 	#box2			{ position:absolute; left:20px; top:220px; width:60px; height:60px;}
-	
+
 	#box-rule1		{ position:absolute; left:20px; top:140px; height:60px; width:800px; border-bottom:1px solid #515151;}
 	#box-rule2		{ position:absolute; left:20px; top:220px; height:60px; width:800px; border-bottom:1px solid #515151;}
-	
+
 </style>
 
 <body>
 
     <div id="container">
-    	
-    
+
+
     	<div id="boxContainer">
-           
+
             <div id="box-rule1"></div>
             <div id="box-rule2"></div>
-            
+
     		<div class="box" id="box1"><span class="centre-text">x/y</span></div>
             <div class="box" id="box2"><span class="centre-text">left/top</span></div>
         </div>
-        
+
         <div id="info">
         	<div id="atomTween"></div>
             <div id="title">x/y versus left/top: Read article about <a href="http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/" target="_blank"s><span style="color:#c678dd">pixel-fitting animation</span></a></div>
             <div id="code">
-            
+
             <span class="func">AtomTween</span>.<span class="meth">to</span> (xyID, <span class="num">5</span>, {x:<span class="num">800</span>, y:<span class="num">145</span>, ease:<span class="str">"ease-in-out"</span>});<br/>
 			<span class="func">AtomTween</span>.<span class="meth">to</span> (lefttopID, <span class="num">5</span>, {left:<span class="num">800</span>, top:<span class="num">225</span>, ease:<span class="str">"ease-in-out"</span>});
-            
-            		
-            		           
+
+
+
             </div>
         </div>
-        
+
     </div>
-     
-    
+
+
 </body>
 
 <!-- JAVASCRIPT -->
-<script type="text/javascript" src="../../src/AtomTween.js"></script>
+<script type="text/javascript" src="../../src/AtomTween.2.0.js"></script>
 
 <script>
 
@@ -66,15 +66,15 @@
 	var sp	= 0.5; // set speed of animation
 	var xyID = AtomTween.getElement("id", "box1");
 	var lefttopID = AtomTween.getElement("id", "box2");
-	
+
 	// Smooth transition with x/y
 	AtomTween.to (xyID, 5, {x:800, y:145, ease:"ease-in-out"});
-	
+
 	// Rough jumpy transition with left/top
 	AtomTween.to (lefttopID, 5, {left:800, top:225, ease:"ease-in-out"});
-	
-	
-	
+
+
+
 	// window.addEventListener('load', init);
 
 

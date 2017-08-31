@@ -24,46 +24,46 @@
 <body>
 
     <div id="container">
-    	
-    
+
+
     	<div id="anim">
             <div class="box" id="box1"><span class="centre-text">box1</span></div>
 
-            
-            
+
+
         </div>
-        
+
         <div id="info">
         	<div id="atomTween"></div>
             <div id="title">rotate:</div>
             <div id="code">
             		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
-					
-					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">3</span>, {rotate:<span class="num">180</span>, ease:<span class="str">"ease-out"</span>});            
+
+					<span class="func">AtomTween</span>.<span class="meth">to</span> (box1ID, <span class="num">3</span>, {rotate:<span class="num">180</span>, ease:<span class="str">"ease-out"</span>});
             </div>
         </div>
-        
+
     </div>
-     
-    
+
+
 </body>
 
 <!-- JAVASCRIPT -->
-<script type="text/javascript" src="../../src/AtomTween.js"></script>
+<script type="text/javascript" src="../../src/AtomTween.2.0.js"></script>
 
 <script>
 
 	function init () {
 		// Get Element from the DOM
 		var box1ID = AtomTween.getElement("id", "box1");
-	
+
 		// rotate: angle in degrees
 		// rotate elelent clockwise by 180° degrees over 3 seconds
 		AtomTween.to (box1ID, 3, {rotate:180, ease:"ease-out"});
-		
-		
+
+
 	}
-	
+
 	window.addEventListener("load", init);
 
 
