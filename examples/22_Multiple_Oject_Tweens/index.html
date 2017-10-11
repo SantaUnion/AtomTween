@@ -12,9 +12,13 @@
 <link rel="stylesheet" type="text/css" href="../css/examples.css">
 <style type="text/css">
 
-	#box1			{left:20px; top:180px;}
-	#box2			{left:100px; top:180px;}
-	#box3			{left:200px; top:180px;}
+	#box1			{left:20px; top:235px;}
+	#box2			{left:100px; top:235px;}
+	#box3			{left:180px; top:235px;}
+
+	#result  {position:absolute; top:20px; right:20px; width:80px; height:80px; border:1px solid #abb2bf;}
+	.char   {text-align: center; font-size: 40px; line-height: 80px; display:block;}
+	.start   {text-align: center; font-size: 22px; line-height: 80px; display:block;}
 
 </style>
 
@@ -24,6 +28,7 @@
 
     <div id="container">
 
+			<div id="result"></div>
 
     	<div id="anim">
             <div class="box" id="box1"><span class="centre-text">box1</span></div>
@@ -38,8 +43,13 @@
             		<span class="dec">var</span> box1ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box1"</span>);<br/>
             		<span class="dec">var</span> box2ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box2"</span>);<br/>
             		<span class="dec">var</span> box3ID = <span class="func">AtomTween</span>.<span class="meth">getElement</span>(<span class="str">"id"</span>, <span class="str">"box3"</span>);<br/>
+            		<span class="dec">var</span> del = <span class="num">0</span>;<br/>
 
-					<span class="func">AtomTween</span>.<span class="meth">to</span> ([box1ID, box2ID, box3ID], <span class="num">1</span>, {delay:<span class="num">1</span>, x:<span class="num">800</span>, ease:<span class="str">"ease-out"</span>});
+					<span class="func">AtomTween</span>.<span class="meth">to</span> ([box1, box2, box3], <span class="num">1</span>, {delay:del+=<span class="num">1</span>, x:<span class="num">800</span>, onStart:start, onComplete:showA, ease:<span class="str">"ease-out"</span>});<br>
+					<span class="func">AtomTween</span>.<span class="meth">to</span> ([box3], <span class="num">1</span>, {delay:del+=<span class="num">2</span>, x:<span class="num">0</span>, onComplete:showB, ease:<span class="str">"ease-out"</span>});<br>
+					<span class="func">AtomTween</span>.<span class="meth">to</span> ([box2], <span class="num">1</span>, {delay:del+=<span class="num">1</span>, y:<span class="num">50</span>, onComplete:showC, ease:<span class="str">"ease-out"</span>});<br>
+					<span class="func">AtomTween</span>.<span class="meth">to</span> ([box1], <span class="num">1</span>, {delay:del+=<span class="num">1</span>, x:<span class="num">500</span>, onComplete:showD, ease:<span class="str">"ease-out"</span>});<br>
+					<span class="func">AtomTween</span>.<span class="meth">to</span> ([box1, box2, box3], <span class="num">1</span>, {delay:del+=<span class="num">1</span>, x:<span class="num">700</span>, y:<span class="num">20</span>, onComplete:showE, ease:<span class="str">"ease-out"</span>});<br>
             </div>
         </div>
 
@@ -49,7 +59,7 @@
 </body>
 
 <!-- JAVASCRIPT -->
-<script type="text/javascript" src="../../src/AtomTween.2.0.js"></script>
+<script type="text/javascript" src="../../src/AtomTween.2.0.min.js"></script>
 
 <script>
 
@@ -58,13 +68,23 @@
 		var box1ID = AtomTween.getElement("id", "box1");
 		var box2ID = AtomTween.getElement("id", "box2");
 		var box3ID = AtomTween.getElement("id", "box3");
+		var result = AtomTween.getElement("id", "result");
 
 		// x: numerical value in pixels. Use 'x' in preference to 'top' for smoother css transitions
 		// animate element 500px on the x axis relative its parent element
-		AtomTween.to ([box1ID, box2ID, box3ID], 1, {delay:1, x:800, ease:"ease-out"});
+		var del = 0
+		AtomTween.to ([box1ID, box2ID, box3ID], 1, {delay:del+=1, x:800, onStart:start, onComplete:showA, ease:"ease-out"});
+		AtomTween.to ([box3ID], 1, {delay:del+=2, x:0,  onComplete:showB, ease:"ease-out"});
+		AtomTween.to ([box2ID], 1, {delay:del+=1, y:50, onComplete:showC, ease:"ease-out"});
+		AtomTween.to ([box1ID], 1, {delay:del+=1, x:500, onComplete:showD, ease:"ease-out"});
+		AtomTween.to ([box1ID, box2ID, box3ID], 1, {delay:del+=1, x:700, y:20, onComplete:showE, ease:"ease-out"});
 
-
-
+		function start() { console.log (">>> start"); result.innerHTML = "<span class='start'>start</span>";}
+		function showA () { console.log (">>> A"); result.innerHTML = "<span class='func char'>A</span>"; }
+		function showB () { console.log (">>> B"); result.innerHTML = "<span class='meth char'>B</span>";}
+		function showC () { console.log (">>> C"); result.innerHTML = "<span class='numb char'>C</span>";}
+		function showD () { console.log (">>> D"); result.innerHTML = "<span class='str char'>D</span>";}
+		function showE () { console.log (">>> E"); result.innerHTML = "<span class='dec char'>E</span>";}
 
 	}
 

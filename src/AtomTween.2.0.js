@@ -9,9 +9,11 @@
 	* example					var myID = AtomTween.getElement("id", "myDiv");
 										AtomTween.to (myID, 4, {delay:1, y:92, x:104, width:300, height:20, scale:2, rotate:30, opacity:0.25, ease:"ease-in-out"});
 
-	* 2.0 Features			1. Mulitple objects in an array can  be sent to animate eg 	AtomTween.to ([id1, id2, id3] , 4, {x:800, ease:"ease-out"});
-											2. Set Function:  	AtomTween.set ([id1, id2, id3], {x:800, ease:"ease-out"});
+ * 2.0 Features			1. Mulitple objects in an array can  be sent to animate eg 	AtomTween.to ([id1, id2, id3] , 4, {x:800, ease:"ease-out"});
+										2. Set Function: AtomTween.set ([id1, id2, id3], {x:800, ease:"ease-out"});
 
+   2.0 Bug Fixes		1. Bug Fixed on Mulitple objects using onStart and onComplete.
+	 									2. onStart and onComplete accurately animated with delays
 
 */
 
@@ -23,7 +25,7 @@ var	AtomTween 		= {};
 var	aTweens 			= [];
 var	aElementID		= [];
 var	nTweenID;
-var bAtomTrace 			= false; // display AtomTrace
+var bAtomTrace 		= false; // display AtomTrace
 
 (function(window) {
 
@@ -66,7 +68,6 @@ var bAtomTrace 			= false; // display AtomTrace
 
 		isArray = Array.isArray(object);
 
-
 		arg.delay = 0;
 
 		if (isArray == false) {
@@ -91,26 +92,26 @@ var bAtomTrace 			= false; // display AtomTrace
   function animate (object, seconds, arg) {
 
     aElementID.push(object.id);
-    var sTween 				= "";
+    var sTween = "";
     var sTransformSetting	= "";
-    var nAbsoluteX			= object.offsetLeft;
-    var nAbsoluteY			= object.offsetTop;
+    var nAbsoluteX = object.offsetLeft;
+    var nAbsoluteY = object.offsetTop;
 
     // Seconds
     sTween = "AtomTween.to ( " + object.id + ", " + seconds + ", {";
-    if (arg.delay != null) 		{ sTween += "delay:"+arg.delay + ", "; }
-    if (arg.opacity != null) 	{ sTween += "opacity:"+arg.opacity + ", "; }
-    if (arg.x != null) 			{ sTween += "x:"+arg.x + ", "; }
-    if (arg.y != null) 			{ sTween += "y:"+arg.y + ", "; }
-    if (arg.scale != null) 		{ sTween += "scale:"+arg.scale + ", "; }
+    if (arg.delay != null) { sTween += "delay:"+arg.delay + ", "; }
+    if (arg.opacity != null) { sTween += "opacity:"+arg.opacity + ", "; }
+    if (arg.x != null) { sTween += "x:"+arg.x + ", "; }
+    if (arg.y != null) { sTween += "y:"+arg.y + ", "; }
+    if (arg.scale != null) { sTween += "scale:"+arg.scale + ", "; }
     if (arg.perspective != null) { sTween += "perspective:"+arg.perspective + ", "; }
-    if (arg.rotate != null) 		{ sTween += "rotate:"+arg.rotate + ", "; }
-    if (arg.rotateY != null) 	{ sTween += "rotateY:"+arg.rotateY + ", "; }
-    if (arg.rotateZ != null) 	{ sTween += "rotateZ:"+arg.rotateZ + ", "; }
-    if (arg.ease != null) 		{ sTween += "ease:'"+arg.ease + "' "; }
+    if (arg.rotate != null) { sTween += "rotate:"+arg.rotate + ", "; }
+    if (arg.rotateY != null) { sTween += "rotateY:"+arg.rotateY + ", "; }
+    if (arg.rotateZ != null) { sTween += "rotateZ:"+arg.rotateZ + ", "; }
+    if (arg.ease != null) { sTween += "ease:'"+arg.ease + "' "; }
     sTween += "});"
 
-    AtomTrace ("----------------------------------------------------------------------------------------------------");
+    AtomTrace ("--------------------------------------------------------------------");
     AtomTrace (sTween);
 
     if ( arg.delay == null) {  arg.delay = 0 }
@@ -240,7 +241,6 @@ var bAtomTrace 			= false; // display AtomTrace
       }
 
 
-
       // --------------------------------------------------
       // Transform: translateX
       // --------------------------------------------------
@@ -259,7 +259,6 @@ var bAtomTrace 			= false; // display AtomTrace
         sTransformSetting += 'translateY('+arg.translateY + 'px) ';
       }
 
-
       // --------------------------------------------------
       // Transform: translateZ
       // --------------------------------------------------
@@ -268,7 +267,6 @@ var bAtomTrace 			= false; // display AtomTrace
         AtomTrace (">> translateZ");
         sTransformSetting += 'translateZ('+arg.translateZ + 'px) ';
       }
-
 
       // --------------------------------------------------
       // Transform: SkewX
@@ -297,7 +295,6 @@ var bAtomTrace 			= false; // display AtomTrace
         AtomTrace (">> skew");
         sTransformSetting += 'skew('+arg.skew + ') ';
       }
-
 
       // --------------------------------------------------
       // Transform: Scale
@@ -340,7 +337,9 @@ var bAtomTrace 			= false; // display AtomTrace
       // onStart : function call
       // --------------------------------------------------
 
-      if (arg.onStart != "") {
+      if (arg.onStart != "" && arg.bStart == undefined) {
+				 AtomTrace (">>> arg.bStart = " + arg.bStart );
+				 arg.bStart = true;
         var onStartID 	= setTimeout ( arg.onStart, 20);
       }
 
@@ -349,8 +348,16 @@ var bAtomTrace 			= false; // display AtomTrace
       // OnComplete : function call
       // --------------------------------------------------
 
-      if (arg.onComplete != "") {
-        var nOnCompleteTime 	= ( arg.delay + seconds ) * 1000;
+      if (arg.onComplete != "" && arg.bComplete == undefined) {
+				AtomTrace (">>> arg.bComplete = " + arg.bComplete );
+				arg.bComplete = true;
+        // var nOnCompleteTime 	= ( arg.delay + seconds ) * 1000;
+        var nOnCompleteTime 	= ( seconds ) * 1000;
+
+
+				var test = arg.delay + seconds;
+				// console.log ("delay = " + test);
+
         var onCompleteID 	= setTimeout ( arg.onComplete, nOnCompleteTime);
       }
 
@@ -582,7 +589,7 @@ var bAtomTrace 			= false; // display AtomTrace
 
 	// --------------------------------------------------
 	// Get Elements - get ID or Class
-    // --------------------------------------------------
+  // --------------------------------------------------
 
 
 	AtomTween.getElement = function (element, id) {
